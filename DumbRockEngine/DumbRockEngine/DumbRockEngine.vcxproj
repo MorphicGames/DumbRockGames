@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClInclude Include="AbstractRenderer.h" />
     <ClInclude Include="DRE_defines.h" />
+    <ClInclude Include="DRE_Game.h" />
     <ClInclude Include="DRE_typedef.h" />
     <ClInclude Include="Engine.h" />
     <ClInclude Include="OpenGLRenderer.h" />

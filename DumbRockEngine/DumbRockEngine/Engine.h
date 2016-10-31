@@ -35,6 +35,9 @@ namespace DRE
 		bool Render();
 		void Shutdown();
 
+		UINT m_TargetFPS;
+		bool m_bIsRunning;
+
 		DRE_Game* m_pDREGame;
 
 		static Engine* m_pEngineInstance;
