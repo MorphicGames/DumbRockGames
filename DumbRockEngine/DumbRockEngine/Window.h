@@ -30,7 +30,12 @@ namespace DRE
 		bool m_bIsFullscreen;
 		bool m_bIsInitialized;
 
+		void SetOpenGLAttributes();
+
+		const char* m_WindowTitle;
+
 		SDL_Window* m_pSDLWindow;
+		SDL_GLContext m_SDLContext;
 
 		SDL_Rect m_WindowRect;
 	};

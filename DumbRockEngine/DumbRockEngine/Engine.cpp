@@ -22,10 +22,26 @@ namespace DRE
 		{
 			return false;
 		}
+
+		Timer t;
+		t.Start();
+
+		m_EngineState = EngineState::RUNNING;
+		
+		while (m_bIsRunning)
+		{
+			t.UpdateFrameTicks();
+			Update();
+			Render();
+			SDL_Delay(t.GetSleepTime(m_TargetFPS));
+		}
+
+		Shutdown();
 		return true;
 	}
 
 	Engine::Engine()
+		: m_bIsRunning(false)
 	{
 		m_EngineState = EngineState::CONSTRUCTING;
 	}
@@ -38,6 +54,7 @@ namespace DRE
 	bool Engine::Initialize()
 	{
 		m_EngineState = EngineState::INITIALIZING;
+		m_bIsRunning = true;
 		return true;
 	}
 
