@@ -14,13 +14,13 @@ namespace DRE
 		friend class Engine;
 
 	public:
-		Window();
+		Window(const char* windowTitle);
 		~Window();
 
 		bool Initialize();
 		void Shutdown();
 
-		void ToggleFullscreen();
+		void ToggleFullscreen();	
 		void SetWindowSize(const int width, const int height);
 
 		int GetWindowWidth() const;

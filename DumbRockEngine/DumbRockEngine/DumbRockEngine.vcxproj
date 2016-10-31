@@ -149,7 +149,6 @@
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AbstractRenderer.cpp" />
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="OpenGLRenderer.cpp" />
     <ClCompile Include="Timer.cpp" />

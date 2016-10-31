@@ -2,7 +2,7 @@
 
 namespace DRE
 {
-	Window::Window()
+	Window::Window(const char* windowTitle)
 	{
 
 	}
