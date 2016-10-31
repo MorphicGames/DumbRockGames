@@ -64,6 +64,22 @@ namespace DRE
 	bool Engine::Initialize()
 	{
 		m_EngineState = EngineState::INITIALIZING;
+
+		if (m_pWindow->Initialize())
+		{
+			return false;
+		}
+
+		if (m_pAbstractRenderer->Initialize())
+		{
+			return false;
+		}
+
+		if (m_pDREGame->Initialize())
+		{
+			return false;
+		}
+
 		m_bIsRunning = true;
 		return true;
 	}
