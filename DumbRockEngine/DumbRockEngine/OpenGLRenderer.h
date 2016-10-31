@@ -9,7 +9,14 @@ namespace DRE
 {
 	class OpenGLRenderer : public AbstractRenderer
 	{
+	public:
+		OpenGLRenderer();
+		virtual ~OpenGLRenderer();
 
+		virtual void SetRenderPrimitive();
+
+		virtual bool Initialize();
+		virtual void RenderMesh(Mesh* renderTarget);
 	};
 }
 

@@ -16,6 +16,16 @@ namespace DRE
 		return m_pEngineInstance;
 	}
 
+	void Engine::SetTargetFPS(UINT targetFPS)
+	{
+		this->m_TargetFPS = targetFPS;
+	}
+
+	void Engine::SetGame(DRE_Game* dreGame)
+	{
+		this->m_pDREGame = dreGame;
+	}
+
 	bool Engine::Run()
 	{
 		if (!this->Initialize())

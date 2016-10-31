@@ -3,9 +3,10 @@
 
 #pragma once
 
-#include "Window.h"
+#include "DRE_Game.h"
 
-class DRE_Game;
+#include "Window.h"
+#include "OpenGLRenderer.h"
 
 namespace DRE
 {
@@ -26,6 +27,9 @@ namespace DRE
 
 		bool Run();
 
+		void SetTargetFPS(UINT targetFPS);
+		void SetGame(DRE_Game* dreGame);
+
 	private:
 		Engine();
 		~Engine();
@@ -39,6 +43,8 @@ namespace DRE
 		bool m_bIsRunning;
 
 		DRE_Game* m_pDREGame;
+		Window* m_pWindow;
+		AbstractRenderer* m_pAbstractRenderer;
 
 		static Engine* m_pEngineInstance;
 		static EngineState m_EngineState;
