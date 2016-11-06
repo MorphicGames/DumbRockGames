@@ -1,6 +1,6 @@
 #include "Timer.h"
 
-#include "SDL\include\SDL.h"
+#include <SDL.h>
 
 namespace DRE
 {

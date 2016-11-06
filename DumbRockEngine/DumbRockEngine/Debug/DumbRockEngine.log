@@ -1,6 +1,2 @@
-﻿  Window.cpp
-  Timer.cpp
-  OpenGLRenderer.cpp
-  Engine.cpp
-  Generating Code...
+﻿  ResourceManager.cpp
   DumbRockEngine.vcxproj -> C:\Users\morph\Documents\GitHub\DumbRockGames\DumbRockEngine\Debug\DumbRockEngine.lib

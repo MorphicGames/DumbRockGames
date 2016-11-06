@@ -28,6 +28,12 @@
     <Filter Include="Source Files\Renderer">
       <UniqueIdentifier>{48e6da23-c4eb-41c5-b86e-d4294f691565}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Resource Types &amp; Management">
+      <UniqueIdentifier>{12588dde-623f-4a16-8c15-5f0b42032863}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Resource Types &amp; Management">
+      <UniqueIdentifier>{0d7635fb-8eab-4a80-81a5-e1e2c1c638f4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -55,7 +61,10 @@
       <Filter>Header Files\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="DRE_Game.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Header Files\Resource Types &amp; Management</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -70,6 +79,9 @@
     </ClCompile>
     <ClCompile Include="OpenGLRenderer.cpp">
       <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Source Files\Resource Types &amp; Management</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -28,7 +28,6 @@ namespace DRE
 		bool Run();
 
 		void SetTargetFPS(UINT targetFPS);
-		void SetGame(DRE_Game* dreGame);
 
 	private:
 		Engine();
