@@ -145,14 +145,16 @@
   <ItemGroup>
     <ClInclude Include="AbstractRenderer.h" />
     <ClInclude Include="DRE_defines.h" />
+    <ClInclude Include="DRE_Game.h" />
     <ClInclude Include="DRE_typedef.h" />
-    <ClInclude Include="GameEngine.h" />
+    <ClInclude Include="Engine.h" />
     <ClInclude Include="OpenGLRenderer.h" />
     <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="Timer.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Engine.cpp" />
     <ClCompile Include="OpenGLRenderer.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="Timer.cpp" />

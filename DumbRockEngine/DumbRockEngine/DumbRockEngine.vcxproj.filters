@@ -39,6 +39,9 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Engine.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
     <ClInclude Include="Timer.h">
       <Filter>Header Files\Core</Filter>
     </ClInclude>
@@ -57,14 +60,17 @@
     <ClInclude Include="OpenGLRenderer.h">
       <Filter>Header Files\Renderer</Filter>
     </ClInclude>
+    <ClInclude Include="DRE_Game.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
     <ClInclude Include="ResourceManager.h">
       <Filter>Header Files\Resource Types &amp; Management</Filter>
     </ClInclude>
-    <ClInclude Include="GameEngine.h">
-      <Filter>Header Files\Core</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
     <ClCompile Include="Timer.cpp">
       <Filter>Source Files\Core</Filter>
     </ClCompile>

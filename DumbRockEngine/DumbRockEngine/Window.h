@@ -5,7 +5,7 @@
 
 #include "DRE_typedef.h"
 
-#include <SDL.h>
+#include "SDL\include\SDL.h"
 
 namespace DRE
 {
