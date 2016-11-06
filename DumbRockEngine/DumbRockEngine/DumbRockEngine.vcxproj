@@ -148,13 +148,19 @@
     <ClInclude Include="DRE_typedef.h" />
     <ClInclude Include="GameEngine.h" />
     <ClInclude Include="OpenGLRenderer.h" />
+    <ClInclude Include="OpenGLShaderHandler.h" />
     <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="ShaderComponent.h" />
+    <ClInclude Include="ShaderProgram.h" />
     <ClInclude Include="Timer.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OpenGLRenderer.cpp" />
+    <ClCompile Include="OpenGLShaderHandler.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="ShaderComponent.cpp" />
+    <ClCompile Include="ShaderProgram.cpp" />
     <ClCompile Include="Timer.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
