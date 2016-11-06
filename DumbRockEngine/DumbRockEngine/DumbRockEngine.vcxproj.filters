@@ -34,12 +34,6 @@
     <Filter Include="Source Files\Resource Types &amp; Management">
       <UniqueIdentifier>{0d7635fb-8eab-4a80-81a5-e1e2c1c638f4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Renderer\Shader Handlers">
-      <UniqueIdentifier>{3d3520c7-b588-4067-8738-44b5e9610683}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Renderer\Shader Handlers">
-      <UniqueIdentifier>{15f66383-971b-4dfa-8d1b-f8cd0181b213}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -69,15 +63,6 @@
     <ClInclude Include="GameEngine.h">
       <Filter>Header Files\Core</Filter>
     </ClInclude>
-    <ClInclude Include="ShaderProgram.h">
-      <Filter>Header Files\Renderer\Shader Handlers</Filter>
-    </ClInclude>
-    <ClInclude Include="ShaderComponent.h">
-      <Filter>Header Files\Renderer\Shader Handlers</Filter>
-    </ClInclude>
-    <ClInclude Include="OpenGLShaderHandler.h">
-      <Filter>Header Files\Renderer\Shader Handlers</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Timer.cpp">
@@ -91,15 +76,6 @@
     </ClCompile>
     <ClCompile Include="ResourceManager.cpp">
       <Filter>Source Files\Resource Types &amp; Management</Filter>
-    </ClCompile>
-    <ClCompile Include="ShaderProgram.cpp">
-      <Filter>Source Files\Renderer\Shader Handlers</Filter>
-    </ClCompile>
-    <ClCompile Include="ShaderComponent.cpp">
-      <Filter>Source Files\Renderer\Shader Handlers</Filter>
-    </ClCompile>
-    <ClCompile Include="OpenGLShaderHandler.cpp">
-      <Filter>Source Files\Renderer\Shader Handlers</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
