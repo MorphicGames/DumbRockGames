@@ -1,12 +1,6 @@
 #include "ShaderProgram.h"
 
-
-
-ShaderProgram::ShaderProgram()
+namespace DRE
 {
-}
 
-
-ShaderProgram::~ShaderProgram()
-{
 }

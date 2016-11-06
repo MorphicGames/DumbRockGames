@@ -1,12 +1,20 @@
 #include "OpenGLShaderHandler.h"
 
-
-
-OpenGLShaderHandler::OpenGLShaderHandler()
+namespace DRE
 {
-}
+	GLuint OpenGLShaderHandler::getOpenGLReference() const
+	{
+		return shaderReference;
+	}
 
+	void OpenGLShaderHandler::setOpenGLReference(GLuint ref)
+	{
+		shaderReference = ref;
+		isNull = false;
+	}
 
-OpenGLShaderHandler::~OpenGLShaderHandler()
-{
+	void OpenGLShaderHandler::Nullify()
+	{
+		isNull = true;
+	}
 }
