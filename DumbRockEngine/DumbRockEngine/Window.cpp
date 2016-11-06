@@ -1,5 +1,7 @@
 #include "Window.h"
 
+#include <glew.h>
+
 namespace DRE
 {
 	Window::Window(const char* windowTitle)
@@ -32,7 +34,10 @@ namespace DRE
 
 		SDL_GL_SetSwapInterval(1);
 
-
+#ifndef __APPLE__
+		glewExperimental = GL_TRUE;
+		glewInit();
+#endif
 
 		return true;
 	}
@@ -51,7 +56,8 @@ namespace DRE
 
 	void Window::SetWindowSize(const int width, const int height)
 	{
-
+		m_WindowRect.w = width;
+		m_WindowRect.h = height;
 	}
 
 	int Window::GetWindowWidth() const
