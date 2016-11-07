@@ -3,10 +3,19 @@
 
 #pragma once
 
+#include "RS Math\RS_Math_Engine.h"
+
+using namespace RS_MATH;
+
 class Color;
 
-namespace DRE;
+namespace DRE
 {
+	struct Vertex
+	{
+
+	};
+
 	class Mesh
 	{
 	public:
