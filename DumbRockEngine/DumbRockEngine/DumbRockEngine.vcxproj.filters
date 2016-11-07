@@ -105,6 +105,9 @@
     <ClInclude Include="RS Math\Vec4.h">
       <Filter>Header Files\Core\RS Math</Filter>
     </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Header Files\Resource Types &amp; Management</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Timer.cpp">
