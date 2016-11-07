@@ -3,6 +3,8 @@
 
 #pragma once
 
+#include "DRE_typedef.h"
+
 namespace DRE
 {
 	class Timer
@@ -17,7 +19,7 @@ namespace DRE
 		void Start();
 		void UpdateFrameTicks();
 		float GetDeltaTime() const;
-		unsigned int GetSleepTime(const unsigned int _fps) const;
+		unsigned int GetSleepTime(const U32 _fps) const;
 	};
 }
 

@@ -30,7 +30,7 @@ namespace DRE
 		return (currTicks - prevTicks) / 1000.0f;
 	}
 
-	unsigned int Timer::GetSleepTime(const unsigned int _fps) const
+	unsigned int Timer::GetSleepTime(const U32 _fps) const
 	{
 		unsigned int _milliSecsPerFrame = 1000 / _fps;
 		if (_milliSecsPerFrame == 0)

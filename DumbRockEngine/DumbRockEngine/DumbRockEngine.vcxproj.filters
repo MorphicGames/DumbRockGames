@@ -19,9 +19,6 @@
     <Filter Include="Source Files\Core">
       <UniqueIdentifier>{ddc2ec69-2972-47ed-823a-f449c3a91a08}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Macros &amp; Defines">
-      <UniqueIdentifier>{d4424efe-898b-4cff-a616-60a5a44bfc4f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Renderer">
       <UniqueIdentifier>{0228596e-39b5-42de-b72f-7369439e4945}</UniqueIdentifier>
     </Filter>
@@ -33,6 +30,12 @@
     </Filter>
     <Filter Include="Source Files\Resource Types &amp; Management">
       <UniqueIdentifier>{0d7635fb-8eab-4a80-81a5-e1e2c1c638f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core\Macros &amp; Defines">
+      <UniqueIdentifier>{d4424efe-898b-4cff-a616-60a5a44bfc4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core\RS Math">
+      <UniqueIdentifier>{fa26a8d1-1212-4b96-ad63-028c1a34c4cf}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -46,10 +49,10 @@
       <Filter>Header Files\Core</Filter>
     </ClInclude>
     <ClInclude Include="DRE_typedef.h">
-      <Filter>Header Files\Macros &amp; Defines</Filter>
+      <Filter>Header Files\Core\Macros &amp; Defines</Filter>
     </ClInclude>
     <ClInclude Include="DRE_defines.h">
-      <Filter>Header Files\Macros &amp; Defines</Filter>
+      <Filter>Header Files\Core\Macros &amp; Defines</Filter>
     </ClInclude>
     <ClInclude Include="AbstractRenderer.h">
       <Filter>Header Files\Renderer</Filter>
@@ -62,6 +65,45 @@
     </ClInclude>
     <ClInclude Include="GameEngine.h">
       <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\EulerAngle.h">
+      <Filter>Header Files\Core\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\Matrix2D.h">
+      <Filter>Header Files\Core\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\Matrix3D.h">
+      <Filter>Header Files\Core\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\Matrix4D.h">
+      <Filter>Header Files\Core\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\Plane.h">
+      <Filter>Header Files\Core\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\Quaternion.h">
+      <Filter>Header Files\Core\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\Ray.h">
+      <Filter>Header Files\Core\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\Rect.h">
+      <Filter>Header Files\Core\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\RS_MATH_DEF.h">
+      <Filter>Header Files\Core\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\RS_Math_Engine.h">
+      <Filter>Header Files\Core\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\Vec2.h">
+      <Filter>Header Files\Core\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\Vec3.h">
+      <Filter>Header Files\Core\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\Vec4.h">
+      <Filter>Header Files\Core\RS Math</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

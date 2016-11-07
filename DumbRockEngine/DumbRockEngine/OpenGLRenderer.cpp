@@ -1,5 +1,10 @@
 #include "OpenGLRenderer.h"
 
+#include "DRE_typedef.h"
+
+#include <glew.h>
+#include <glut.h>
+
 namespace DRE
 {
 	OpenGLRenderer::OpenGLRenderer()
@@ -25,6 +30,6 @@ namespace DRE
 
 	void OpenGLRenderer::RenderMesh(Mesh* renderTarget)
 	{
-
+		
 	}
 }

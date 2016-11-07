@@ -5,7 +5,13 @@
 
 namespace DRE
 {
-	typedef unsigned int UINT;
+	typedef float				F32;
+
+	typedef unsigned int		U32;
+	typedef unsigned long long	U64;
+
+	typedef int					I32;
+	typedef long long			I64;
 }
 
 #endif

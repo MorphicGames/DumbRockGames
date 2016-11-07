@@ -17,6 +17,9 @@ namespace DRE
 
 		virtual bool Initialize();
 		virtual void RenderMesh(Mesh* renderTarget);
+
+	private:
+		unsigned char m_RenderPrimitive;
 	};
 }
 

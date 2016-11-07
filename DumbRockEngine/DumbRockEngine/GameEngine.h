@@ -39,6 +39,8 @@ namespace DRE
 
 		bool isRunning;
 
+		U32 targetFPS;
+
 		Window* m_pWindow;
 		AbstractRenderer* m_pAbstractRenderer;
 	};
