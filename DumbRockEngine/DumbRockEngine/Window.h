@@ -37,7 +37,7 @@ namespace DRE
 		SDL_Window* m_pSDLWindow;
 		SDL_GLContext m_SDLContext;
 
-		SDL_Rect m_WindowRect;
+		SDL_Rect* m_WindowRect;
 	};
 }
 

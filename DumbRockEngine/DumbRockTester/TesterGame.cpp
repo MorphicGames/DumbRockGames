@@ -15,12 +15,14 @@ namespace DRE
 
 	void TesterGame::StartGame()
 	{
-
+		OnStart();
 	}
 
 	void TesterGame::OnStart()
 	{
-
+		m_pWindow = new Window("DumbRockEngine - Test Game");
+		m_pWindow->SetWindowSize(1024, 512);
+		m_pWindow->Initialize();
 	}
 
 	void TesterGame::OnEnd()

@@ -6,12 +6,13 @@ namespace DRE
 {
 	Window::Window(const char* windowTitle)
 	{
-
+		this->m_WindowTitle = windowTitle;
+		this->m_WindowRect = new SDL_Rect();
 	}
 
 	Window::~Window()
 	{
-
+		Shutdown();
 	}
 
 	bool Window::Initialize()
@@ -21,7 +22,7 @@ namespace DRE
 			return false;
 		}
 
-		m_pSDLWindow = SDL_CreateWindow(m_WindowTitle, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, m_WindowRect.w, m_WindowRect.h, SDL_WINDOW_OPENGL);
+		m_pSDLWindow = SDL_CreateWindow(m_WindowTitle, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, m_WindowRect->w, m_WindowRect->h, SDL_WINDOW_OPENGL);
 		if (!m_pSDLWindow)
 		{
 			Shutdown();
@@ -47,6 +48,9 @@ namespace DRE
 		SDL_GL_DeleteContext(m_SDLContext);
 
 		SDL_DestroyWindow(m_pSDLWindow);
+
+		delete m_WindowRect;
+		m_WindowRect = nullptr;
 	}
 
 	void Window::ToggleFullscreen()
@@ -56,18 +60,18 @@ namespace DRE
 
 	void Window::SetWindowSize(const int width, const int height)
 	{
-		m_WindowRect.w = width;
-		m_WindowRect.h = height;
+		m_WindowRect->w = width;
+		m_WindowRect->h = height;
 	}
 
 	int Window::GetWindowWidth() const
 	{
-		return m_WindowRect.w;
+		return m_WindowRect->w;
 	}
 
 	int Window::GetWindowHeight() const
 	{
-		return m_WindowRect.h;
+		return m_WindowRect->h;
 	}
 
 	void Window::SetOpenGLAttributes()
