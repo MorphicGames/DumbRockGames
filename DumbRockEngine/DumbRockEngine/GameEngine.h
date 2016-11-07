@@ -3,6 +3,7 @@
 
 #pragma once
 
+#include "Timer.h"
 #include "Window.h"
 #include "OpenGLRenderer.h"
 
@@ -17,6 +18,7 @@ namespace DRE
 		{
 			//Needs Implementation
 		}
+
 		virtual ~GameEngine() 
 		{
 			//Needs Implementation
@@ -27,7 +29,7 @@ namespace DRE
 		bool IsRunning() { return isRunning; }
 
 	protected:
-		virtual void OnStart()		= 0;
+		virtual bool OnStart()		= 0;
 		virtual void OnEnd()		= 0;
 
 		virtual void Update()		= 0;

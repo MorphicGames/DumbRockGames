@@ -16,7 +16,7 @@ namespace DRE
 		virtual void StartGame();
 
 	protected:
-		virtual void OnStart();
+		virtual bool OnStart();
 		virtual void OnEnd();
 
 		virtual void Update();
