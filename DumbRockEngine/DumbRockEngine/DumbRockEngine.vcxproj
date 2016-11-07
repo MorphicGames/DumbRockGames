@@ -85,7 +85,8 @@
     </Link>
     <Lib>
       <AdditionalLibraryDirectories>$(ProjectDir)SDL\lib\x86;$(ProjectDir)OpenGL\glew-1.13.0\lib\Release\win32;$(ProjectDir)OpenGL\glut-3.7.6\lib\glut\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32.lib;glew32s.lib;glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(ProjectDir)SDL\lib\x86\SDL2.lib;$(ProjectDir)SDL\lib\x86\SDL2main.lib;$(ProjectDir)OpenGL\glew-1.13.0\lib\Release\win32\glew32.lib;$(ProjectDir)OpenGL\glew-1.13.0\lib\Release\win32\glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
