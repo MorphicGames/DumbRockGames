@@ -11,7 +11,7 @@ namespace DRE
 	class AbstractRenderer
 	{
 	public:
-		virtual ~AbstractRenderer() = 0;
+		virtual ~AbstractRenderer() {}
 
 		virtual void SetRenderPrimitive(unsigned int primitive) = 0;
 

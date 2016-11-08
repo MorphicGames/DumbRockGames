@@ -11,7 +11,7 @@ namespace DRE
 	{
 	public:
 		OpenGLRenderer();
-		virtual ~OpenGLRenderer();
+		~OpenGLRenderer();
 
 		virtual void SetRenderPrimitive(unsigned int primitive);
 
