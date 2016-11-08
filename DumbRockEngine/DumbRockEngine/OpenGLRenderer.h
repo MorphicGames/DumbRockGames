@@ -13,13 +13,16 @@ namespace DRE
 		OpenGLRenderer();
 		virtual ~OpenGLRenderer();
 
-		virtual void SetRenderPrimitive();
+		virtual void SetRenderPrimitive(unsigned int primitive);
 
 		virtual bool Initialize();
+
+		virtual void ClearRenderer(Window* window);
+
 		virtual void RenderMesh(Mesh* renderTarget);
 
 	private:
-		unsigned char m_RenderPrimitive;
+		unsigned int m_RenderPrimitive;
 	};
 }
 

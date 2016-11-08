@@ -48,6 +48,12 @@ namespace DRE
 			return false;
 		}
 
+		m_pAbstractRenderer = new OpenGLRenderer();
+		if (!m_pAbstractRenderer->Initialize())
+		{
+			return false;
+		}
+
 		return true;
 	}
 
@@ -69,6 +75,7 @@ namespace DRE
 	void TesterGame::PreRender()
 	{
 		std::cout << "DRE Game Pre Rendered" << std::endl;
+		m_pAbstractRenderer->ClearRenderer(this->m_pWindow);
 	}
 
 	void TesterGame::Render()

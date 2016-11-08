@@ -26,6 +26,8 @@ namespace DRE
 		int GetWindowWidth() const;
 		int GetWindowHeight() const;
 
+		SDL_Window* GetSDLWindow() const;
+
 	private:
 		bool m_bIsFullscreen;
 		bool m_bIsInitialized;

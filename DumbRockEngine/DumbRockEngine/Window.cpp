@@ -74,6 +74,11 @@ namespace DRE
 		return m_WindowRect->h;
 	}
 
+	SDL_Window* Window::GetSDLWindow() const
+	{
+		return m_pSDLWindow;
+	}
+
 	void Window::SetOpenGLAttributes()
 	{
 		SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);

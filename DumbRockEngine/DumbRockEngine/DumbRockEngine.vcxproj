@@ -84,7 +84,7 @@
     </Link>
     <Lib>
       <AdditionalLibraryDirectories>$(ProjectDir)SDL\lib\x86;$(ProjectDir)OpenGL\glew-1.13.0\lib\Release\win32;$(ProjectDir)OpenGL\glut-3.7.6\lib\glut\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>$(ProjectDir)SDL\lib\x86\SDL2.lib;$(ProjectDir)SDL\lib\x86\SDL2main.lib;$(ProjectDir)OpenGL\glew-1.13.0\lib\Release\win32\glew32.lib;$(ProjectDir)OpenGL\glew-1.13.0\lib\Release\win32\glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(ProjectDir)SDL\lib\x86\SDL2.lib;$(ProjectDir)SDL\lib\x86\SDL2main.lib;$(ProjectDir)OpenGL\glew-1.13.0\lib\Release\win32\glew32.lib;$(ProjectDir)OpenGL\glew-1.13.0\lib\Release\win32\glew32s.lib;$(SolutionDir)DumbRockEngine\OpenGL\glut-3.7.6\lib\glut\Release\glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Lib>
   </ItemDefinitionGroup>

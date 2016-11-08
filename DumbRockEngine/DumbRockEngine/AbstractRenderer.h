@@ -3,21 +3,22 @@
 
 #pragma once
 
-class Mesh;
-
 namespace DRE
 {
+	class Mesh;
+	class Window;
+
 	class AbstractRenderer
 	{
 	public:
-		AbstractRenderer() {
-
-		}
 		virtual ~AbstractRenderer() = 0;
 
-		virtual void SetRenderPrimitive() = 0;
+		virtual void SetRenderPrimitive(unsigned int primitive) = 0;
 
 		virtual bool Initialize() = 0;
+
+		virtual void ClearRenderer(Window* window) = 0;
+
 		virtual void RenderMesh(Mesh* renderTarget) = 0;
 	};
 }
