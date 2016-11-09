@@ -114,6 +114,12 @@
     <ClInclude Include="Vertex.h">
       <Filter>Header Files\Resource Types &amp; Management</Filter>
     </ClInclude>
+    <ClInclude Include="SceneGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Timer.cpp">
