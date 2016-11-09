@@ -37,6 +37,9 @@
     <Filter Include="Header Files\Core\RS Math">
       <UniqueIdentifier>{fa26a8d1-1212-4b96-ad63-028c1a34c4cf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Resource Types &amp; Management\Managers">
+      <UniqueIdentifier>{e8aae2fd-fe19-4a4e-8d30-e417a703de5f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -59,9 +62,6 @@
     </ClInclude>
     <ClInclude Include="OpenGLRenderer.h">
       <Filter>Header Files\Renderer</Filter>
-    </ClInclude>
-    <ClInclude Include="ResourceManager.h">
-      <Filter>Header Files\Resource Types &amp; Management</Filter>
     </ClInclude>
     <ClInclude Include="GameEngine.h">
       <Filter>Header Files\Core</Filter>
@@ -114,11 +114,11 @@
     <ClInclude Include="Vertex.h">
       <Filter>Header Files\Resource Types &amp; Management</Filter>
     </ClInclude>
-    <ClInclude Include="SceneGraph.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="MeshManager.h">
+      <Filter>Header Files\Resource Types &amp; Management\Managers</Filter>
     </ClInclude>
-    <ClInclude Include="ObjectGraph.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Header Files\Resource Types &amp; Management\Managers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -132,6 +132,9 @@
       <Filter>Source Files\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="ResourceManager.cpp">
+      <Filter>Source Files\Resource Types &amp; Management</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshManager.cpp">
       <Filter>Source Files\Resource Types &amp; Management</Filter>
     </ClCompile>
   </ItemGroup>
