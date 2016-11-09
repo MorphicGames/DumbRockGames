@@ -114,9 +114,6 @@
     <ClInclude Include="Vertex.h">
       <Filter>Header Files\Resource Types &amp; Management</Filter>
     </ClInclude>
-    <ClInclude Include="MeshManager.h">
-      <Filter>Header Files\Resource Types &amp; Management\Managers</Filter>
-    </ClInclude>
     <ClInclude Include="ResourceManager.h">
       <Filter>Header Files\Resource Types &amp; Management\Managers</Filter>
     </ClInclude>
@@ -132,9 +129,6 @@
       <Filter>Source Files\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="ResourceManager.cpp">
-      <Filter>Source Files\Resource Types &amp; Management</Filter>
-    </ClCompile>
-    <ClCompile Include="MeshManager.cpp">
       <Filter>Source Files\Resource Types &amp; Management</Filter>
     </ClCompile>
   </ItemGroup>
