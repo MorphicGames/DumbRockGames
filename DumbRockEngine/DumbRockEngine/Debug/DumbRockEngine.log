@@ -1,1 +1,44 @@
-﻿  DumbRockEngine.vcxproj -> C:\Users\morph\Documents\GitHub\DumbRockGames\DumbRockEngine\Debug\DumbRockEngine.lib
+﻿  Window.cpp
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\window.cpp(59): warning C4150: deletion of pointer to incomplete type 'SDL_Window'; no destructor called
+  c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\sdl\include\sdl_video.h(89): note: see declaration of 'SDL_Window'
+  OpenGLRenderer.cpp
+  Frustrum.cpp
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\rs math\vec3.h(147): warning C4244: 'return': conversion from 'double' to 'const float', possible loss of data
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\rs math\quaternion.h(72): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\rs math\quaternion.h(72): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\rs math\eulerangle.h(14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\rs math\eulerangle.h(15): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\rs math\eulerangle.h(16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\rs math\eulerangle.h(18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\rs math\eulerangle.h(19): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\rs math\eulerangle.h(20): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\rs math\eulerangle.h(22): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\rs math\eulerangle.h(23): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\rs math\eulerangle.h(24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Camera.cpp
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\rs math\vec3.h(147): warning C4244: 'return': conversion from 'double' to 'const float', possible loss of data
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\rs math\quaternion.h(72): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\rs math\quaternion.h(72): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\rs math\eulerangle.h(14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\rs math\eulerangle.h(15): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\rs math\eulerangle.h(16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\rs math\eulerangle.h(18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\rs math\eulerangle.h(19): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\rs math\eulerangle.h(20): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\rs math\eulerangle.h(22): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\rs math\eulerangle.h(23): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\rs math\eulerangle.h(24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+glew32.lib(glew32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in SDL2.lib(SDL2.dll); second definition ignored
+glew32.lib(glew32.dll) : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+glew32s.lib(glew.obj) : warning LNK4006: _glewGetErrorString@4 already defined in glew32.lib(glew32.dll); second definition ignored
+glew32s.lib(glew.obj) : warning LNK4006: _glewGetExtension@4 already defined in glew32.lib(glew32.dll); second definition ignored
+glew32s.lib(glew.obj) : warning LNK4006: _glewGetString@4 already defined in glew32.lib(glew32.dll); second definition ignored
+glew32s.lib(glew.obj) : warning LNK4006: _glewInit@0 already defined in glew32.lib(glew32.dll); second definition ignored
+glew32s.lib(glew.obj) : warning LNK4006: _glewIsSupported@4 already defined in glew32.lib(glew32.dll); second definition ignored
+glew32s.lib(glew.obj) : warning LNK4006: _wglewGetExtension@4 already defined in glew32.lib(glew32.dll); second definition ignored
+glew32s.lib(glew.obj) : warning LNK4006: _wglewInit@0 already defined in glew32.lib(glew32.dll); second definition ignored
+glew32s.lib(glew.obj) : warning LNK4006: _wglewIsSupported@4 already defined in glew32.lib(glew32.dll); second definition ignored
+glut32.lib(glut32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in SDL2.lib(SDL2.dll); second definition ignored
+glut32.lib(glut32.dll) : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+  DumbRockEngine.vcxproj -> C:\Users\morph\Documents\GitHub\DumbRockGames\DumbRockEngine\Debug\DumbRockEngine.lib

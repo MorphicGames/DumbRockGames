@@ -8,8 +8,7 @@ int main(int argc, char* argv[])
 
 	tg->StartGame();
 
-	delete tg;
-	tg = nullptr;
+	P_DELETE(tg);
 
 	return 0;
 }

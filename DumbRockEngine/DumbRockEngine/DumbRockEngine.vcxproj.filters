@@ -40,6 +40,15 @@
     <Filter Include="Header Files\Resource Types &amp; Management\Managers">
       <UniqueIdentifier>{e8aae2fd-fe19-4a4e-8d30-e417a703de5f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Game Components">
+      <UniqueIdentifier>{20eaf630-0146-4140-8123-2a5f0da50d80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Camera &amp; Lighting">
+      <UniqueIdentifier>{b31907be-fdad-4e0a-b5eb-a4bfed11b3c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Camera &amp; Lighting">
+      <UniqueIdentifier>{ccf99cb6-1dd7-4e5c-85d7-e7af9dba1dbb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -129,6 +138,15 @@
     <ClInclude Include="LogManager.h">
       <Filter>Header Files\Core</Filter>
     </ClInclude>
+    <ClInclude Include="Transform.hpp">
+      <Filter>Header Files\Game Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files\Camera &amp; Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="Frustrum.h">
+      <Filter>Header Files\Camera &amp; Lighting</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Timer.cpp">
@@ -151,6 +169,12 @@
     </ClCompile>
     <ClCompile Include="MaterialManager.cpp">
       <Filter>Source Files\Resource Types &amp; Management</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files\Camera &amp; Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="Frustrum.cpp">
+      <Filter>Source Files\Camera &amp; Lighting</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
