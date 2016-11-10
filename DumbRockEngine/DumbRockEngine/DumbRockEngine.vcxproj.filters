@@ -117,6 +117,15 @@
     <ClInclude Include="ResourceManager.h">
       <Filter>Header Files\Resource Types &amp; Management\Managers</Filter>
     </ClInclude>
+    <ClInclude Include="ModelManager.h">
+      <Filter>Header Files\Resource Types &amp; Management\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Header Files\Resource Types &amp; Management\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialManager.h">
+      <Filter>Header Files\Resource Types &amp; Management\Managers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Timer.cpp">
@@ -129,6 +138,15 @@
       <Filter>Source Files\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="ResourceManager.cpp">
+      <Filter>Source Files\Resource Types &amp; Management</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelManager.cpp">
+      <Filter>Source Files\Resource Types &amp; Management</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Source Files\Resource Types &amp; Management</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialManager.cpp">
       <Filter>Source Files\Resource Types &amp; Management</Filter>
     </ClCompile>
   </ItemGroup>

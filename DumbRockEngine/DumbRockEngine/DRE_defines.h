@@ -5,7 +5,7 @@
 
 namespace DRE
 {
-
+#define P_DELETE(x) { delete x; x = nullptr; }
 }
 
 #endif

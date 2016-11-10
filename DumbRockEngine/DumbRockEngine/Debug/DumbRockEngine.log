@@ -1,1 +1,1 @@
-﻿LINK : fatal error LNK1181: cannot open input file 'C:\Users\Andrew\Source\Repos\DumbRockGames2\DumbRockEngine\DumbRockEngine\OpenGL\glew-1.13.0\lib\Release\win32\glew32.lib'
+﻿  DumbRockEngine.vcxproj -> C:\Users\morph\Documents\GitHub\DumbRockGames\DumbRockEngine\Debug\DumbRockEngine.lib
