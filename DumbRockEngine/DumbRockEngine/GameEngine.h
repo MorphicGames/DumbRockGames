@@ -3,9 +3,14 @@
 
 #pragma once
 
+#include "LogManager.h"
 #include "Timer.h"
 #include "Window.h"
+
 #include "OpenGLRenderer.h"
+#include "ModelManager.h"
+#include "MaterialManager.h"
+#include "TextureManager.h"
 
 namespace DRE
 {
@@ -45,6 +50,10 @@ namespace DRE
 
 		Window* m_pWindow;
 		AbstractRenderer* m_pAbstractRenderer;
+
+		ModelManager* m_pModelManager;
+		TextureManager* m_pTextureManager;
+		MaterialManager* m_pMaterialManager;
 	};
 }
 

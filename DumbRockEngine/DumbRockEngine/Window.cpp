@@ -1,4 +1,5 @@
 #include "Window.h"
+#include "DRE_defines.h"
 
 #include <glew.h>
 
@@ -7,7 +8,7 @@ namespace DRE
 	Window::Window(const char* windowTitle)
 	{
 		this->m_WindowTitle = windowTitle;
-		this->m_WindowRect = new SDL_Rect();
+		this->m_pWindowRect = new SDL_Rect();
 	}
 
 	Window::~Window()
@@ -17,16 +18,18 @@ namespace DRE
 
 	bool Window::Initialize()
 	{
+		m_bIsInitialized = false;
+
 		if (SDL_Init(SDL_INIT_VIDEO) < 0)
 		{
-			return false;
+			return m_bIsInitialized;
 		}
 
-		m_pSDLWindow = SDL_CreateWindow(m_WindowTitle, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, m_WindowRect->w, m_WindowRect->h, SDL_WINDOW_OPENGL);
+		m_pSDLWindow = SDL_CreateWindow(m_WindowTitle, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, m_pWindowRect->w, m_pWindowRect->h, SDL_WINDOW_OPENGL);
 		if (!m_pSDLWindow)
 		{
 			Shutdown();
-			return false;
+			return m_bIsInitialized;
 		}
 
 		m_SDLContext = SDL_GL_CreateContext(m_pSDLWindow);
@@ -40,7 +43,9 @@ namespace DRE
 		glewInit();
 #endif
 
-		return true;
+		m_bIsInitialized = true;
+
+		return m_bIsInitialized;
 	}
 
 	void Window::Shutdown()
@@ -49,29 +54,31 @@ namespace DRE
 
 		SDL_DestroyWindow(m_pSDLWindow);
 
-		delete m_WindowRect;
-		m_WindowRect = nullptr;
+		P_DELETE(m_WindowTitle);
+		P_DELETE(m_pWindowRect);
+		P_DELETE(m_pSDLWindow);
 	}
 
 	void Window::ToggleFullscreen()
 	{
-		
+		m_bIsFullscreen = !m_bIsFullscreen;
+		SDL_SetWindowFullscreen(m_pSDLWindow, (m_bIsFullscreen ? SDL_WINDOW_FULLSCREEN : SDL_WINDOW_SHOWN));
 	}
 
 	void Window::SetWindowSize(const int width, const int height)
 	{
-		m_WindowRect->w = width;
-		m_WindowRect->h = height;
+		m_pWindowRect->w = width;
+		m_pWindowRect->h = height;
 	}
 
 	int Window::GetWindowWidth() const
 	{
-		return m_WindowRect->w;
+		return m_pWindowRect->w;
 	}
 
 	int Window::GetWindowHeight() const
 	{
-		return m_WindowRect->h;
+		return m_pWindowRect->h;
 	}
 
 	SDL_Window* Window::GetSDLWindow() const

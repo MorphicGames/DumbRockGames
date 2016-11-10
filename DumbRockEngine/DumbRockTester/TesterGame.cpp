@@ -1,18 +1,20 @@
 #include "TesterGame.h"
 
-#include <iostream>
-
 namespace DRE
 {
 	TesterGame::TesterGame()
 		: GameEngine()
 	{
 		this->targetFPS = 60;
+
+		LogManager::Initialize();
+
+		LogManager::LogMessage(LogMessageType::INFO, "Created Game Engine", __FILE__, __LINE__);
 	}
 
 	TesterGame::~TesterGame()
 	{
-
+		LogManager::LogMessage(LogMessageType::INFO, "Destroying Game Engine", __FILE__, __LINE__);
 	}
 
 	void TesterGame::StartGame()
@@ -39,18 +41,20 @@ namespace DRE
 
 	bool TesterGame::OnStart()
 	{
-		std::cout << "DRE Game Started" << std::endl;
+		LogManager::LogMessage(LogMessageType::INFO, "Starting Game Engine", __FILE__, __LINE__);
 
 		m_pWindow = new Window("DumbRockEngine - Test Game");
 		m_pWindow->SetWindowSize(1024, 512);
 		if (!m_pWindow->Initialize())
 		{
+			LogManager::LogMessage(LogMessageType::ERROR, "Failed to Initialize Window", __FILE__, __LINE__);
 			return false;
 		}
 
 		m_pAbstractRenderer = new OpenGLRenderer();
 		if (!m_pAbstractRenderer->Initialize())
 		{
+			LogManager::LogMessage(LogMessageType::ERROR, "Failed to Initialize Renderer", __FILE__, __LINE__);
 			return false;
 		}
 
@@ -59,32 +63,30 @@ namespace DRE
 
 	void TesterGame::OnEnd()
 	{
-		std::cout << "DRE Game Ended" << std::endl;
+		LogManager::LogMessage(LogMessageType::INFO, "Ending Game Engine", __FILE__, __LINE__);
 	}
 
 	void TesterGame::Update()
 	{
-		std::cout << "DRE Game Updated" << std::endl;
+
 	}
 
 	void TesterGame::LateUpdate()
 	{
-		std::cout << "DRE Game Late Updated" << std::endl;
+
 	}
 
 	void TesterGame::PreRender()
 	{
-		std::cout << "DRE Game Pre Rendered" << std::endl;
 		m_pAbstractRenderer->ClearRenderer(this->m_pWindow);
 	}
 
 	void TesterGame::Render()
 	{
-		std::cout << "DRE Game Rendered" << std::endl;
 	}
 
 	void TesterGame::PostRender()
 	{
-		std::cout << "DRE Game Post Rendered" << std::endl;
+
 	}
 }

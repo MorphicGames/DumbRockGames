@@ -126,6 +126,9 @@
     <ClInclude Include="MaterialManager.h">
       <Filter>Header Files\Resource Types &amp; Management\Managers</Filter>
     </ClInclude>
+    <ClInclude Include="LogManager.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Timer.cpp">
