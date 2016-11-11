@@ -49,6 +49,9 @@
     <Filter Include="Source Files\Camera &amp; Lighting">
       <UniqueIdentifier>{ccf99cb6-1dd7-4e5c-85d7-e7af9dba1dbb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Resource Types &amp; Management\Managers">
+      <UniqueIdentifier>{2900662d-d34f-494c-8be2-d2c0b5b02928}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -147,6 +150,9 @@
     <ClInclude Include="Frustrum.h">
       <Filter>Header Files\Camera &amp; Lighting</Filter>
     </ClInclude>
+    <ClInclude Include="SpriteManager.h">
+      <Filter>Header Files\Resource Types &amp; Management\Managers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Timer.cpp">
@@ -158,23 +164,26 @@
     <ClCompile Include="OpenGLRenderer.cpp">
       <Filter>Source Files\Renderer</Filter>
     </ClCompile>
-    <ClCompile Include="ResourceManager.cpp">
-      <Filter>Source Files\Resource Types &amp; Management</Filter>
-    </ClCompile>
-    <ClCompile Include="ModelManager.cpp">
-      <Filter>Source Files\Resource Types &amp; Management</Filter>
-    </ClCompile>
-    <ClCompile Include="TextureManager.cpp">
-      <Filter>Source Files\Resource Types &amp; Management</Filter>
-    </ClCompile>
-    <ClCompile Include="MaterialManager.cpp">
-      <Filter>Source Files\Resource Types &amp; Management</Filter>
-    </ClCompile>
     <ClCompile Include="Camera.cpp">
       <Filter>Source Files\Camera &amp; Lighting</Filter>
     </ClCompile>
     <ClCompile Include="Frustrum.cpp">
       <Filter>Source Files\Camera &amp; Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialManager.cpp">
+      <Filter>Source Files\Resource Types &amp; Management\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelManager.cpp">
+      <Filter>Source Files\Resource Types &amp; Management\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Source Files\Resource Types &amp; Management\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Source Files\Resource Types &amp; Management\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteManager.cpp">
+      <Filter>Source Files\Resource Types &amp; Management\Managers</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

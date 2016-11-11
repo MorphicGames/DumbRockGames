@@ -170,6 +170,7 @@
     <ClInclude Include="RS Math\Vec2.h" />
     <ClInclude Include="RS Math\Vec3.h" />
     <ClInclude Include="RS Math\Vec4.h" />
+    <ClInclude Include="SpriteManager.h" />
     <ClInclude Include="TextureManager.h" />
     <ClInclude Include="Timer.h" />
     <ClInclude Include="Transform.hpp" />
@@ -183,6 +184,7 @@
     <ClCompile Include="ModelManager.cpp" />
     <ClCompile Include="OpenGLRenderer.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="SpriteManager.cpp" />
     <ClCompile Include="TextureManager.cpp" />
     <ClCompile Include="Timer.cpp" />
     <ClCompile Include="Window.cpp" />
