@@ -1,73 +1,136 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="Header Files\Core">
-      <UniqueIdentifier>{46fe56bb-6fe2-427b-9ebb-0c9508f681cc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Core">
-      <UniqueIdentifier>{ddc2ec69-2972-47ed-823a-f449c3a91a08}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Renderer">
-      <UniqueIdentifier>{0228596e-39b5-42de-b72f-7369439e4945}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Renderer">
-      <UniqueIdentifier>{48e6da23-c4eb-41c5-b86e-d4294f691565}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Resource Types &amp; Management">
-      <UniqueIdentifier>{12588dde-623f-4a16-8c15-5f0b42032863}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Resource Types &amp; Management">
-      <UniqueIdentifier>{0d7635fb-8eab-4a80-81a5-e1e2c1c638f4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Core\Macros &amp; Defines">
-      <UniqueIdentifier>{d4424efe-898b-4cff-a616-60a5a44bfc4f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Core\RS Math">
-      <UniqueIdentifier>{fa26a8d1-1212-4b96-ad63-028c1a34c4cf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Resource Types &amp; Management\Managers">
-      <UniqueIdentifier>{e8aae2fd-fe19-4a4e-8d30-e417a703de5f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Game Components">
-      <UniqueIdentifier>{20eaf630-0146-4140-8123-2a5f0da50d80}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Camera &amp; Lighting">
-      <UniqueIdentifier>{b31907be-fdad-4e0a-b5eb-a4bfed11b3c8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Camera &amp; Lighting">
-      <UniqueIdentifier>{ccf99cb6-1dd7-4e5c-85d7-e7af9dba1dbb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Resource Types &amp; Management\Managers">
-      <UniqueIdentifier>{2900662d-d34f-494c-8be2-d2c0b5b02928}</UniqueIdentifier>
-    </Filter>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialManager.cpp">
+      <Filter>Source Files\Resources &amp; Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelManager.cpp">
+      <Filter>Source Files\Resources &amp; Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Source Files\Resources &amp; Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteManager.cpp">
+      <Filter>Source Files\Resources &amp; Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Source Files\Resources &amp; Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files\Cameras &amp; Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="Frustrum.cpp">
+      <Filter>Source Files\Cameras &amp; Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLRenderer.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="GameEngine.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="LogManager.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="DRE_defines.h">
+      <Filter>Header Files\Defines and Macros</Filter>
+    </ClInclude>
+    <ClInclude Include="DRE_typedef.h">
+      <Filter>Header Files\Defines and Macros</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\EulerAngle.h">
+      <Filter>Header Files\Defines and Macros\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\Matrix2D.h">
+      <Filter>Header Files\Defines and Macros\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\Matrix3D.h">
+      <Filter>Header Files\Defines and Macros\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\Matrix4D.h">
+      <Filter>Header Files\Defines and Macros\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\Plane.h">
+      <Filter>Header Files\Defines and Macros\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\Quaternion.h">
+      <Filter>Header Files\Defines and Macros\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\Ray.h">
+      <Filter>Header Files\Defines and Macros\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\RS_MATH_DEF.h">
+      <Filter>Header Files\Defines and Macros\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\RS_Math_Engine.h">
+      <Filter>Header Files\Defines and Macros\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\Rect.h">
+      <Filter>Header Files\Defines and Macros\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\Vec2.h">
+      <Filter>Header Files\Defines and Macros\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\Vec3.h">
+      <Filter>Header Files\Defines and Macros\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RS Math\Vec4.h">
+      <Filter>Header Files\Defines and Macros\RS Math</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialManager.h">
+      <Filter>Header Files\Resources &amp; Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelManager.h">
+      <Filter>Header Files\Resources &amp; Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Header Files\Resources &amp; Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteManager.h">
+      <Filter>Header Files\Resources &amp; Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Header Files\Resources &amp; Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Header Files\Resources &amp; Managers\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Header Files\Resources &amp; Managers\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Header Files\Resources &amp; Managers\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Header Files\Resources &amp; Managers\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files\Resources &amp; Managers\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>Header Files\Resources &amp; Managers\Resources</Filter>
+    </ClInclude>
     <ClInclude Include="Timer.h">
       <Filter>Header Files\Core</Filter>
     </ClInclude>
     <ClInclude Include="Window.h">
       <Filter>Header Files\Core</Filter>
     </ClInclude>
-    <ClInclude Include="DRE_typedef.h">
-      <Filter>Header Files\Core\Macros &amp; Defines</Filter>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files\Cameras &amp; Lightning</Filter>
     </ClInclude>
-    <ClInclude Include="DRE_defines.h">
-      <Filter>Header Files\Core\Macros &amp; Defines</Filter>
+    <ClInclude Include="Frustrum.h">
+      <Filter>Header Files\Cameras &amp; Lightning</Filter>
     </ClInclude>
     <ClInclude Include="AbstractRenderer.h">
       <Filter>Header Files\Renderer</Filter>
@@ -75,147 +138,64 @@
     <ClInclude Include="OpenGLRenderer.h">
       <Filter>Header Files\Renderer</Filter>
     </ClInclude>
-    <ClInclude Include="GameEngine.h">
-      <Filter>Header Files\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\EulerAngle.h">
-      <Filter>Header Files\Core\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\Matrix2D.h">
-      <Filter>Header Files\Core\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\Matrix3D.h">
-      <Filter>Header Files\Core\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\Matrix4D.h">
-      <Filter>Header Files\Core\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\Plane.h">
-      <Filter>Header Files\Core\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\Quaternion.h">
-      <Filter>Header Files\Core\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\Ray.h">
-      <Filter>Header Files\Core\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\Rect.h">
-      <Filter>Header Files\Core\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\RS_MATH_DEF.h">
-      <Filter>Header Files\Core\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\RS_Math_Engine.h">
-      <Filter>Header Files\Core\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\Vec2.h">
-      <Filter>Header Files\Core\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\Vec3.h">
-      <Filter>Header Files\Core\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\Vec4.h">
-      <Filter>Header Files\Core\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="Mesh.h">
-      <Filter>Header Files\Resource Types &amp; Management</Filter>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="Colour.h">
       <Filter>Header Files\Renderer</Filter>
     </ClInclude>
-    <ClInclude Include="Vertex.h">
-      <Filter>Header Files\Resource Types &amp; Management</Filter>
-    </ClInclude>
-    <ClInclude Include="ResourceManager.h">
-      <Filter>Header Files\Resource Types &amp; Management\Managers</Filter>
-    </ClInclude>
-    <ClInclude Include="ModelManager.h">
-      <Filter>Header Files\Resource Types &amp; Management\Managers</Filter>
-    </ClInclude>
-    <ClInclude Include="TextureManager.h">
-      <Filter>Header Files\Resource Types &amp; Management\Managers</Filter>
-    </ClInclude>
-    <ClInclude Include="MaterialManager.h">
-      <Filter>Header Files\Resource Types &amp; Management\Managers</Filter>
-    </ClInclude>
-    <ClInclude Include="LogManager.h">
-      <Filter>Header Files\Core</Filter>
-    </ClInclude>
-<<<<<<< HEAD
-    <ClInclude Include="InputManager.h">
-      <Filter>Header Files\Resource Types &amp; Management\Managers</Filter>
-    </ClInclude>
-=======
     <ClInclude Include="Transform.hpp">
-      <Filter>Header Files\Game Components</Filter>
+      <Filter>Header Files\GameObject Components</Filter>
     </ClInclude>
-    <ClInclude Include="Camera.h">
-      <Filter>Header Files\Camera &amp; Lighting</Filter>
-    </ClInclude>
-    <ClInclude Include="Frustrum.h">
-      <Filter>Header Files\Camera &amp; Lighting</Filter>
-    </ClInclude>
-    <ClInclude Include="SpriteManager.h">
-      <Filter>Header Files\Resource Types &amp; Management\Managers</Filter>
-    </ClInclude>
-    <ClInclude Include="Material.h">
-      <Filter>Header Files\Resource Types &amp; Management</Filter>
-    </ClInclude>
-    <ClInclude Include="Model.h">
-      <Filter>Header Files\Resource Types &amp; Management</Filter>
-    </ClInclude>
-    <ClInclude Include="Texture.h">
-      <Filter>Header Files\Resource Types &amp; Management</Filter>
-    </ClInclude>
-    <ClInclude Include="Sprite.h">
-      <Filter>Header Files\Resource Types &amp; Management</Filter>
-    </ClInclude>
-<<<<<<< HEAD
-    <ClInclude Include="Shader.h">
-      <Filter>Header Files\Renderer</Filter>
-    </ClInclude>
-=======
->>>>>>> origin/master
->>>>>>> origin/master
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Timer.cpp">
-      <Filter>Source Files\Core</Filter>
-    </ClCompile>
-    <ClCompile Include="Window.cpp">
-      <Filter>Source Files\Core</Filter>
-    </ClCompile>
-    <ClCompile Include="OpenGLRenderer.cpp">
-      <Filter>Source Files\Renderer</Filter>
-    </ClCompile>
-    <ClCompile Include="Camera.cpp">
-      <Filter>Source Files\Camera &amp; Lighting</Filter>
-    </ClCompile>
-    <ClCompile Include="Frustrum.cpp">
-      <Filter>Source Files\Camera &amp; Lighting</Filter>
-    </ClCompile>
-    <ClCompile Include="MaterialManager.cpp">
-      <Filter>Source Files\Resource Types &amp; Management\Managers</Filter>
-    </ClCompile>
-    <ClCompile Include="ModelManager.cpp">
-      <Filter>Source Files\Resource Types &amp; Management\Managers</Filter>
-    </ClCompile>
-    <ClCompile Include="ResourceManager.cpp">
-      <Filter>Source Files\Resource Types &amp; Management\Managers</Filter>
-    </ClCompile>
-    <ClCompile Include="TextureManager.cpp">
-      <Filter>Source Files\Resource Types &amp; Management\Managers</Filter>
-    </ClCompile>
-    <ClCompile Include="SpriteManager.cpp">
-      <Filter>Source Files\Resource Types &amp; Management\Managers</Filter>
-    </ClCompile>
-<<<<<<< HEAD
-    <ClCompile Include="Shader.cpp">
-      <Filter>Source Files\Renderer</Filter>
-=======
-    <ClCompile Include="InputManager.cpp">
-      <Filter>Source Files\Resource Types &amp; Management</Filter>
->>>>>>> origin/master
-    </ClCompile>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4e37cc1f-20dd-44d6-8c18-b431f414f3f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{1f07818e-c530-4504-88c5-6717bae987e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{b890eddd-248b-4641-898e-d10c86a0ca8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{3f5de160-c0f3-461d-a351-ad6f88c17210}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cameras &amp; Lighting">
+      <UniqueIdentifier>{95d8b5cc-6d5f-4e05-b55b-22e57aa02958}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Renderer">
+      <UniqueIdentifier>{a616424d-f8cc-4da7-8794-66eaa146e039}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Resources &amp; Managers">
+      <UniqueIdentifier>{c1bcab6e-8108-4ccc-b3ad-eb099bd76d6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{e0271424-4517-48b9-84d3-0f8526d702ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Defines and Macros">
+      <UniqueIdentifier>{2a58912c-cd4d-473a-b55f-d9667c6b8844}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Defines and Macros\RS Math">
+      <UniqueIdentifier>{0d29aa04-d456-4e0c-95a8-b297fc2fafe6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Resources &amp; Managers">
+      <UniqueIdentifier>{8580d907-a090-4864-a19c-ff6d2cb8ae4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Resources &amp; Managers\Resources">
+      <UniqueIdentifier>{a6c01fe3-3e54-4609-8969-ba923bbea917}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Cameras &amp; Lightning">
+      <UniqueIdentifier>{a85ff096-adeb-48ac-8168-b4812598cf5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Renderer">
+      <UniqueIdentifier>{1f3b7d0d-2c51-4a64-98e5-154c1c6070bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObject Components">
+      <UniqueIdentifier>{d817b205-2c31-4ade-afcc-c46956a2d4df}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>

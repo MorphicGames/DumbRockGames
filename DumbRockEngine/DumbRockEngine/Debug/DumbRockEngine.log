@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-﻿  Shader.cpp
-glew32.lib(glew32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in SDL2.lib(SDL2.dll); second definition ignored
+﻿glew32.lib(glew32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in SDL2.lib(SDL2.dll); second definition ignored
 glew32.lib(glew32.dll) : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
 glew32s.lib(glew.obj) : warning LNK4006: _glewGetErrorString@4 already defined in glew32.lib(glew32.dll); second definition ignored
 glew32s.lib(glew.obj) : warning LNK4006: _glewGetExtension@4 already defined in glew32.lib(glew32.dll); second definition ignored
@@ -13,16 +11,3 @@ glew32s.lib(glew.obj) : warning LNK4006: _wglewIsSupported@4 already defined in 
 glut32.lib(glut32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in SDL2.lib(SDL2.dll); second definition ignored
 glut32.lib(glut32.dll) : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
   DumbRockEngine.vcxproj -> C:\Users\morph\Documents\GitHub\DumbRockGames\DumbRockEngine\Debug\DumbRockEngine.lib
-=======
-﻿  Window.cpp
-c:\users\andrew\documents\c++\dumbrock\dumbrockgames\dumbrockengine\dumbrockengine\window.cpp(59): warning C4150: deletion of pointer to incomplete type 'SDL_Window'; no destructor called
-  c:\users\andrew\documents\c++\dumbrock\dumbrockgames\dumbrockengine\dumbrockengine\sdl\include\sdl_video.h(89): note: see declaration of 'SDL_Window'
-  Timer.cpp
-  TextureManager.cpp
-  ResourceManager.cpp
-  OpenGLRenderer.cpp
-  ModelManager.cpp
-  MaterialManager.cpp
-  Generating Code...
-LINK : fatal error LNK1181: cannot open input file 'C:\Users\Andrew\Documents\C++\DumbRock\DumbRockGames\DumbRockEngine\DumbRockEngine\OpenGL\glew-1.13.0\lib\Release\win32\glew32.lib'
->>>>>>> origin/master
