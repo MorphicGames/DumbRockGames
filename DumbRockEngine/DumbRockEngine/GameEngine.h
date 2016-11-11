@@ -15,6 +15,8 @@
 #include "MaterialManager.h"
 #include "TextureManager.h"
 
+#include "SpriteManager.h"
+
 namespace DRE
 {
 	class GameEngine

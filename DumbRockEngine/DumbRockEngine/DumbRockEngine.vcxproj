@@ -152,8 +152,10 @@
     <ClInclude Include="Frustrum.h" />
     <ClInclude Include="GameEngine.h" />
     <ClInclude Include="LogManager.h" />
+    <ClInclude Include="Material.h" />
     <ClInclude Include="MaterialManager.h" />
     <ClInclude Include="Mesh.h" />
+    <ClInclude Include="Model.h" />
     <ClInclude Include="ModelManager.h" />
     <ClInclude Include="OpenGLRenderer.h" />
     <ClInclude Include="ResourceManager.h" />
@@ -170,7 +172,9 @@
     <ClInclude Include="RS Math\Vec2.h" />
     <ClInclude Include="RS Math\Vec3.h" />
     <ClInclude Include="RS Math\Vec4.h" />
+    <ClInclude Include="Sprite.h" />
     <ClInclude Include="SpriteManager.h" />
+    <ClInclude Include="Texture.h" />
     <ClInclude Include="TextureManager.h" />
     <ClInclude Include="Timer.h" />
     <ClInclude Include="Transform.hpp" />

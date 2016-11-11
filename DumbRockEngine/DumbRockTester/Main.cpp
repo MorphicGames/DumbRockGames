@@ -2,9 +2,11 @@
 
 using namespace DRE;
 
+static TesterGame* tg;
+
 int main(int argc, char* argv[])
 {
-	TesterGame* tg = new TesterGame();
+	tg = new TesterGame();
 
 	tg->StartGame();
 

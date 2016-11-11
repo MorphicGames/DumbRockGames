@@ -52,6 +52,7 @@ namespace DRE
 		}
 
 		m_pAbstractRenderer = new OpenGLRenderer();
+		m_pAbstractRenderer->SetClearColour(new Colour(0.0f, 0.0f, 0.0f, 1.0f));
 		if (!m_pAbstractRenderer->Initialize())
 		{
 			LogManager::LogMessage(LogMessageType::ERROR, "Failed to Initialize Renderer", __FILE__, __LINE__);
