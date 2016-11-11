@@ -5,6 +5,8 @@
 
 #include "AbstractRenderer.h"
 
+#include "Colour.h"
+
 namespace DRE
 {
 	class OpenGLRenderer : public AbstractRenderer
@@ -13,6 +15,7 @@ namespace DRE
 		OpenGLRenderer();
 		~OpenGLRenderer();
 
+		virtual void SetClearColour(Colour* colour);
 		virtual void SetRenderPrimitive(unsigned int primitive);
 
 		virtual bool Initialize();
@@ -21,8 +24,11 @@ namespace DRE
 
 		virtual void RenderMesh(Mesh* renderTarget);
 
+		virtual void RenderModel(Model* renderTarget);
+
 	private:
 		unsigned int m_RenderPrimitive;
+		Colour* m_pClearColour;
 	};
 }
 

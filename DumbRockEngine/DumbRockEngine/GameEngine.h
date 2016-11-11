@@ -3,6 +3,9 @@
 
 #pragma once
 
+#include "DRE_defines.h"
+#include "DRE_typedef.h"
+
 #include "LogManager.h"
 #include "Timer.h"
 #include "Window.h"
@@ -11,6 +14,8 @@
 #include "ModelManager.h"
 #include "MaterialManager.h"
 #include "TextureManager.h"
+
+#include "SpriteManager.h"
 
 namespace DRE
 {

@@ -40,6 +40,18 @@
     <Filter Include="Header Files\Resource Types &amp; Management\Managers">
       <UniqueIdentifier>{e8aae2fd-fe19-4a4e-8d30-e417a703de5f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Game Components">
+      <UniqueIdentifier>{20eaf630-0146-4140-8123-2a5f0da50d80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Camera &amp; Lighting">
+      <UniqueIdentifier>{b31907be-fdad-4e0a-b5eb-a4bfed11b3c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Camera &amp; Lighting">
+      <UniqueIdentifier>{ccf99cb6-1dd7-4e5c-85d7-e7af9dba1dbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Resource Types &amp; Management\Managers">
+      <UniqueIdentifier>{2900662d-d34f-494c-8be2-d2c0b5b02928}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -129,9 +141,36 @@
     <ClInclude Include="LogManager.h">
       <Filter>Header Files\Core</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="InputManager.h">
       <Filter>Header Files\Resource Types &amp; Management\Managers</Filter>
     </ClInclude>
+=======
+    <ClInclude Include="Transform.hpp">
+      <Filter>Header Files\Game Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files\Camera &amp; Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="Frustrum.h">
+      <Filter>Header Files\Camera &amp; Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteManager.h">
+      <Filter>Header Files\Resource Types &amp; Management\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Header Files\Resource Types &amp; Management</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Header Files\Resource Types &amp; Management</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files\Resource Types &amp; Management</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Header Files\Resource Types &amp; Management</Filter>
+    </ClInclude>
+>>>>>>> origin/master
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Timer.cpp">
@@ -143,17 +182,26 @@
     <ClCompile Include="OpenGLRenderer.cpp">
       <Filter>Source Files\Renderer</Filter>
     </ClCompile>
-    <ClCompile Include="ResourceManager.cpp">
-      <Filter>Source Files\Resource Types &amp; Management</Filter>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files\Camera &amp; Lighting</Filter>
     </ClCompile>
-    <ClCompile Include="ModelManager.cpp">
-      <Filter>Source Files\Resource Types &amp; Management</Filter>
-    </ClCompile>
-    <ClCompile Include="TextureManager.cpp">
-      <Filter>Source Files\Resource Types &amp; Management</Filter>
+    <ClCompile Include="Frustrum.cpp">
+      <Filter>Source Files\Camera &amp; Lighting</Filter>
     </ClCompile>
     <ClCompile Include="MaterialManager.cpp">
-      <Filter>Source Files\Resource Types &amp; Management</Filter>
+      <Filter>Source Files\Resource Types &amp; Management\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelManager.cpp">
+      <Filter>Source Files\Resource Types &amp; Management\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Source Files\Resource Types &amp; Management\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Source Files\Resource Types &amp; Management\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteManager.cpp">
+      <Filter>Source Files\Resource Types &amp; Management\Managers</Filter>
     </ClCompile>
     <ClCompile Include="InputManager.cpp">
       <Filter>Source Files\Resource Types &amp; Management</Filter>

@@ -2,14 +2,15 @@
 
 using namespace DRE;
 
+static TesterGame* tg;
+
 int main(int argc, char* argv[])
 {
-	TesterGame* tg = new TesterGame();
+	tg = new TesterGame();
 
 	tg->StartGame();
 
-	delete tg;
-	tg = nullptr;
+	P_DELETE(tg);
 
 	return 0;
 }
