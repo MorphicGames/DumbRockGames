@@ -151,6 +151,7 @@
     <ClInclude Include="DRE_typedef.h" />
     <ClInclude Include="Frustrum.h" />
     <ClInclude Include="GameEngine.h" />
+    <ClInclude Include="InputManager.h" />
     <ClInclude Include="LogManager.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="MaterialManager.h" />
@@ -183,8 +184,12 @@
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <ClCompile Include="InputManager.cpp" />
+=======
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Frustrum.cpp" />
+>>>>>>> origin/master
     <ClCompile Include="MaterialManager.cpp" />
     <ClCompile Include="ModelManager.cpp" />
     <ClCompile Include="OpenGLRenderer.cpp" />

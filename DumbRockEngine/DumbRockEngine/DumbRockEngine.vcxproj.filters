@@ -141,6 +141,11 @@
     <ClInclude Include="LogManager.h">
       <Filter>Header Files\Core</Filter>
     </ClInclude>
+<<<<<<< HEAD
+    <ClInclude Include="InputManager.h">
+      <Filter>Header Files\Resource Types &amp; Management\Managers</Filter>
+    </ClInclude>
+=======
     <ClInclude Include="Transform.hpp">
       <Filter>Header Files\Game Components</Filter>
     </ClInclude>
@@ -165,9 +170,13 @@
     <ClInclude Include="Sprite.h">
       <Filter>Header Files\Resource Types &amp; Management</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="Shader.h">
       <Filter>Header Files\Renderer</Filter>
     </ClInclude>
+=======
+>>>>>>> origin/master
+>>>>>>> origin/master
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Timer.cpp">
@@ -200,8 +209,13 @@
     <ClCompile Include="SpriteManager.cpp">
       <Filter>Source Files\Resource Types &amp; Management\Managers</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="Shader.cpp">
       <Filter>Source Files\Renderer</Filter>
+=======
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Source Files\Resource Types &amp; Management</Filter>
+>>>>>>> origin/master
     </ClCompile>
   </ItemGroup>
 </Project>
