@@ -149,6 +149,7 @@
     <ClInclude Include="DRE_defines.h" />
     <ClInclude Include="DRE_typedef.h" />
     <ClInclude Include="GameEngine.h" />
+    <ClInclude Include="InputManager.h" />
     <ClInclude Include="LogManager.h" />
     <ClInclude Include="MaterialManager.h" />
     <ClInclude Include="Mesh.h" />
@@ -174,6 +175,7 @@
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="MaterialManager.cpp" />
     <ClCompile Include="ModelManager.cpp" />
     <ClCompile Include="OpenGLRenderer.cpp" />
