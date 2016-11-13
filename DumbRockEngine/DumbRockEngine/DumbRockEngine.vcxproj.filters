@@ -54,45 +54,6 @@
     <ClInclude Include="DRE_typedef.h">
       <Filter>Header Files\Defines and Macros</Filter>
     </ClInclude>
-    <ClInclude Include="RS Math\EulerAngle.h">
-      <Filter>Header Files\Defines and Macros\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\Matrix2D.h">
-      <Filter>Header Files\Defines and Macros\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\Matrix3D.h">
-      <Filter>Header Files\Defines and Macros\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\Matrix4D.h">
-      <Filter>Header Files\Defines and Macros\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\Plane.h">
-      <Filter>Header Files\Defines and Macros\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\Quaternion.h">
-      <Filter>Header Files\Defines and Macros\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\Ray.h">
-      <Filter>Header Files\Defines and Macros\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\RS_MATH_DEF.h">
-      <Filter>Header Files\Defines and Macros\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\RS_Math_Engine.h">
-      <Filter>Header Files\Defines and Macros\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\Rect.h">
-      <Filter>Header Files\Defines and Macros\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\Vec2.h">
-      <Filter>Header Files\Defines and Macros\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\Vec3.h">
-      <Filter>Header Files\Defines and Macros\RS Math</Filter>
-    </ClInclude>
-    <ClInclude Include="RS Math\Vec4.h">
-      <Filter>Header Files\Defines and Macros\RS Math</Filter>
-    </ClInclude>
     <ClInclude Include="MaterialManager.h">
       <Filter>Header Files\Resources &amp; Managers</Filter>
     </ClInclude>
@@ -190,9 +151,6 @@
     </Filter>
     <Filter Include="Header Files\Defines and Macros">
       <UniqueIdentifier>{2a58912c-cd4d-473a-b55f-d9667c6b8844}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Defines and Macros\RS Math">
-      <UniqueIdentifier>{0d29aa04-d456-4e0c-95a8-b297fc2fafe6}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\Resources &amp; Managers">
       <UniqueIdentifier>{8580d907-a090-4864-a19c-ff6d2cb8ae4b}</UniqueIdentifier>

@@ -3,10 +3,7 @@
 
 #pragma once
 
-#include "RS Math\RS_Math_Engine.h"
 #include "Vertex.h"
-
-using namespace RS_MATH;
 
 class Color;
 

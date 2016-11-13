@@ -3,10 +3,6 @@
 
 #pragma once
 
-#include "RS Math\RS_Math_Engine.h"
-
-using namespace RS_MATH;
-
 namespace DRE
 {
 	class Frustrum
