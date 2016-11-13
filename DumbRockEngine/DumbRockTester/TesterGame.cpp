@@ -15,6 +15,7 @@ namespace DRE
 	TesterGame::~TesterGame()
 	{
 		LogManager::LogMessage(LogMessageType::INFO, "Destroying Game Engine", __FILE__, __LINE__);
+		OnEnd();
 	}
 
 	void TesterGame::StartGame()

@@ -12,6 +12,7 @@ namespace DRE
 {
 	OpenGLRenderer::OpenGLRenderer()
 	{
+		m_bDrawWireframes = false;
 		m_RenderPrimitive = NULL;
 		m_pClearColour = nullptr;
 	}
@@ -29,6 +30,17 @@ namespace DRE
 	void OpenGLRenderer::SetRenderPrimitive(unsigned int primitive)
 	{
 		this->m_RenderPrimitive = primitive;
+	}
+
+	void OpenGLRenderer::ToggleWireframeMode()
+	{
+		m_bDrawWireframes = !m_bDrawWireframes;
+		if (m_bDrawWireframes) {
+			glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+		}
+		else {
+			glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+		}
 	}
 
 	bool OpenGLRenderer::Initialize()

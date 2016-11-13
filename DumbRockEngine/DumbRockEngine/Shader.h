@@ -22,12 +22,13 @@ namespace DRE
 	class Shader
 	{
 	private:
-		GLuint program;
+		GLuint m_Shader;
 
 	public:
 		Shader(const GLchar* filename, const ShaderType& shaderType);
+		~Shader();
 
-		void UseShader();
+		GLuint GetShader() const;
 	};
 }
 

@@ -29,10 +29,9 @@ namespace DRE
 
 		virtual bool Initialize() = 0;
 
+		virtual void ToggleWireframeMode() = 0;
 		virtual void ClearRenderer(Window* window) = 0;
-
 		virtual void RenderMesh(Mesh* renderTarget) = 0;
-
 		virtual void RenderModel(Model* renderTarget) = 0;
 	};
 }

@@ -1,2 +1,2 @@
 INFO: Created Game Engine - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrocktester\testergame.cpp at line: 12
-INFO: Starting Game Engine - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrocktester\testergame.cpp at line: 44
+INFO: Starting Game Engine - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrocktester\testergame.cpp at line: 45

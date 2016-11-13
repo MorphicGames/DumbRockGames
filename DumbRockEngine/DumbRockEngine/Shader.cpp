@@ -29,49 +29,41 @@ namespace DRE
 
 		const GLchar* shaderCode = fileCode.c_str();
 
-		GLuint shader;
 		GLint success;
 
 		switch (shaderType)
 		{
 		case ShaderType::VERTEX:
-			shader = glCreateShader(GL_VERTEX_SHADER);
+			this->m_Shader = glCreateShader(GL_VERTEX_SHADER);
 			break;
 		case ShaderType::FRAGMENT:
-			shader = glCreateShader(GL_FRAGMENT_SHADER);
+			this->m_Shader = glCreateShader(GL_FRAGMENT_SHADER);
 			break;
 		case ShaderType::TESSELLATION:
-			shader = glCreateShader(GL_ARB_tessellation_shader);
+			this->m_Shader = glCreateShader(GL_ARB_tessellation_shader);
 			break;
 		case ShaderType::GEOMETRY:
-			shader = glCreateShader(GL_GEOMETRY_SHADER);
+			this->m_Shader = glCreateShader(GL_GEOMETRY_SHADER);
 			break;
 		}
 
-		glShaderSource(shader, 1, &shaderCode, NULL);
-		glCompileShader(shader);
+		glShaderSource(this->m_Shader, 1, &shaderCode, NULL);
+		glCompileShader(this->m_Shader);
 
-		glGetShaderiv(shader, GL_COMPILE_STATUS, &success);
+		glGetShaderiv(this->m_Shader, GL_COMPILE_STATUS, &success);
 		if (!success)
 		{
 			LogManager::LogMessage(LogMessageType::ERROR, "Shader Compilation Failed", __FILE__, __LINE__);
 		}
-
-		this->program = glCreateProgram();
-		glAttachShader(this->program, shader);
-		glLinkProgram(this->program);
-
-		glGetProgramiv(this->program, GL_LINK_STATUS, &success);
-		if (!success)
-		{
-			LogManager::LogMessage(LogMessageType::ERROR, "Shader Linking Failed", __FILE__, __LINE__);
-		}
-
-		glDeleteShader(shader);
 	}
 
-	void Shader::UseShader()
+	Shader::~Shader()
 	{
-		glUseProgram(this->program);
+		glDeleteShader(this->m_Shader);
+	}
+
+	GLuint Shader::GetShader() const
+	{
+		return this->m_Shader;
 	}
 }
