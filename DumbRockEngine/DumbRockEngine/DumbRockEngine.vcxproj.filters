@@ -72,9 +72,6 @@
     <ClInclude Include="Sprite.h">
       <Filter>Header Files\Resources &amp; Managers\Resources</Filter>
     </ClInclude>
-    <ClInclude Include="Mesh.h">
-      <Filter>Header Files\Resources &amp; Managers\Resources</Filter>
-    </ClInclude>
     <ClInclude Include="Model.h">
       <Filter>Header Files\Resources &amp; Managers\Resources</Filter>
     </ClInclude>
@@ -82,9 +79,6 @@
       <Filter>Header Files\Resources &amp; Managers\Resources</Filter>
     </ClInclude>
     <ClInclude Include="Texture.h">
-      <Filter>Header Files\Resources &amp; Managers\Resources</Filter>
-    </ClInclude>
-    <ClInclude Include="Vertex.h">
       <Filter>Header Files\Resources &amp; Managers\Resources</Filter>
     </ClInclude>
     <ClInclude Include="Timer.h">

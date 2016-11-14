@@ -154,7 +154,6 @@
     <ClInclude Include="LogManager.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="MaterialManager.h" />
-    <ClInclude Include="Mesh.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="ModelManager.h" />
     <ClInclude Include="OpenGLRenderer.h" />
@@ -168,7 +167,6 @@
     <ClInclude Include="TextureManager.h" />
     <ClInclude Include="Timer.h" />
     <ClInclude Include="Transform.hpp" />
-    <ClInclude Include="Vertex.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
