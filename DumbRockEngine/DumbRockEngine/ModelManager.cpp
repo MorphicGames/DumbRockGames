@@ -20,6 +20,11 @@ namespace DRE
 
 	ModelManager::~ModelManager()
 	{
+		
+	}
 
+	void ModelManager::AddModel(const std::string& modelName, Model* model)
+	{
+		this->m_ModelList->AddResource(modelName, model);
 	}
 }

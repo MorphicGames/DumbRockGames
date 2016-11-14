@@ -21,6 +21,8 @@ namespace DRE
 
 	public:
 		static ModelManager* GetInstance();
+
+		void AddModel(const std::string& modelName, Model* model);
 	};
 }
 

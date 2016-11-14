@@ -2,6 +2,8 @@
 
 #include "LogManager.h"
 
+#include <glew.h>
+
 namespace DRE
 {
 	Shader::Shader(const GLchar* filename, const ShaderType& shaderType)

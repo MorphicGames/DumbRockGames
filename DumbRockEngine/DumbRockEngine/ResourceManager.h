@@ -26,11 +26,12 @@ namespace DRE
 			}
 		}
 
-		int AddResource(std::string& name, ResourceType* resource) {
+		int AddResource(const std::string& name, ResourceType* resource) {
 			resourceNameTable->insert(std::make_pair(name, resource));
+			return 0;
 		}
 
-		ResourceType GetResource(std::string& name) {
+		ResourceType GetResource(const std::string& name) {
 			std::map<std::string, ResourceType*>::iterator tmp = resourceNameTable->find(name);
 			return tmp->second;
 		}
@@ -40,7 +41,7 @@ namespace DRE
 			return tmp->second;
 		}
 
-		void RemoveResource(std::string& name) {
+		void RemoveResource(const std::string& name) {
 			std::map<std::string, ResourceType*>::iterator tmp = resourceNameTable->find(name);
 			delete tmp->second;
 			tmp->second = nullptr;

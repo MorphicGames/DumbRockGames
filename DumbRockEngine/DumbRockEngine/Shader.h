@@ -7,7 +7,7 @@
 #include <fstream>
 #include <sstream>
 
-#include <glew.h>
+#include "OpenGL\glew-1.13.0\include\GL\glew.h"
 
 namespace DRE
 {

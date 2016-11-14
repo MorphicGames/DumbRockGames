@@ -135,6 +135,10 @@
   <ItemGroup>
     <ClInclude Include="TesterGame.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="TestFragmentShader.frag" />
+    <None Include="TestVertexShader.vert" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

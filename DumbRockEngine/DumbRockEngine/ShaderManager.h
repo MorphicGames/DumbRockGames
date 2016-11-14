@@ -21,6 +21,8 @@ namespace DRE
 
 	public:
 		static ShaderManager* GetInstance();
+
+		void AddShader(const std::string& shaderName, Shader* shader);
 	};
 }
 

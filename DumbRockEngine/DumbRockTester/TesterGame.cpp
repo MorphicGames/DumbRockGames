@@ -65,6 +65,14 @@ namespace DRE
 			return false;
 		}
 
+		m_pShaderManager->AddShader("TestVertexShader", new Shader("TestVertexShader.vert", ShaderType::VERTEX));
+		m_pShaderManager->AddShader("TestFragementShader", new Shader("TestFragementShader.frag", ShaderType::FRAGMENT));
+
+		m_pShaderProgram = new ShaderProgram(this->m_pShaderManager);
+		m_pShaderProgram->AttachShader("TestVertexShader");
+		m_pShaderProgram->AttachShader("TestFragementShader");
+		m_pShaderProgram->LinkProgram();
+
 		return true;
 	}
 

@@ -10,6 +10,8 @@
 #include "Timer.h"
 #include "Window.h"
 
+#include "ShaderProgram.h"
+
 #include "OpenGLRenderer.h"
 #include "ModelManager.h"
 #include "MaterialManager.h"
@@ -56,6 +58,8 @@ namespace DRE
 
 		Window* m_pWindow;
 		AbstractRenderer* m_pAbstractRenderer;
+
+		ShaderProgram* m_pShaderProgram;
 
 		ModelManager* m_pModelManager;
 		TextureManager* m_pTextureManager;
