@@ -2,6 +2,9 @@
 
 #include "DRE_typedef.h"
 #include "Window.h"
+#include "LogManager.h"
+
+#include "Model.h"
 
 #include "SDL\include\SDL.h"
 
@@ -45,6 +48,8 @@ namespace DRE
 
 	bool OpenGLRenderer::Initialize()
 	{
+		LogManager::LogMessage(LogMessageType::INFO, "Initializing OpenGLRenderer...", __FILE__, __LINE__);
+
 		if (!m_RenderPrimitive) {
 			m_RenderPrimitive = GL_TRIANGLES;
 		}
@@ -64,17 +69,10 @@ namespace DRE
 		SDL_GL_SwapWindow(window->GetSDLWindow());
 	}
 
-	void OpenGLRenderer::RenderMesh(Mesh* renderTarget)
-	{
-		glBegin(m_RenderPrimitive);
-
-		glEnd();
-	}
-
 	void OpenGLRenderer::RenderModel(Model* renderTarget)
 	{
-		glBegin(m_RenderPrimitive);
-
-		glEnd();
+		glBindVertexArray(renderTarget->GetVAO());
+		glDrawElements(m_RenderPrimitive, renderTarget->GetFaceCount(), GL_UNSIGNED_INT, 0);
+		glBindVertexArray(0);
 	}
 }

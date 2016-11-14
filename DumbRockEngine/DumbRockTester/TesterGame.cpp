@@ -44,6 +44,11 @@ namespace DRE
 	{
 		LogManager::LogMessage(LogMessageType::INFO, "Starting Game Engine", __FILE__, __LINE__);
 
+		m_pModelManager = ModelManager::GetInstance();
+		m_pTextureManager = TextureManager::GetInstance();
+		m_pMaterialManager = MaterialManager::GetInstance();
+		m_pShaderManager = ShaderManager::GetInstance();
+
 		m_pWindow = new Window("DumbRockEngine - Test Game");
 		m_pWindow->SetWindowSize(1024, 512);
 		if (!m_pWindow->Initialize())

@@ -9,7 +9,6 @@ namespace DRE
 {
 	struct Colour;
 
-	class Mesh;
 	class Model;
 	class Window;
 
@@ -31,7 +30,6 @@ namespace DRE
 
 		virtual void ToggleWireframeMode() = 0;
 		virtual void ClearRenderer(Window* window) = 0;
-		virtual void RenderMesh(Mesh* renderTarget) = 0;
 		virtual void RenderModel(Model* renderTarget) = 0;
 	};
 }

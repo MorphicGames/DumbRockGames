@@ -14,6 +14,7 @@
 #include "ModelManager.h"
 #include "MaterialManager.h"
 #include "TextureManager.h"
+#include "ShaderManager.h"
 
 #include "SpriteManager.h"
 
@@ -59,6 +60,7 @@ namespace DRE
 		ModelManager* m_pModelManager;
 		TextureManager* m_pTextureManager;
 		MaterialManager* m_pMaterialManager;
+		ShaderManager* m_pShaderManager;
 	};
 }
 

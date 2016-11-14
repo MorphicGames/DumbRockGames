@@ -1,5 +1,6 @@
 #include "Window.h"
 #include "DRE_defines.h"
+#include "LogManager.h"
 
 #include <glew.h>
 
@@ -18,10 +19,13 @@ namespace DRE
 
 	bool Window::Initialize()
 	{
+		LogManager::LogMessage(LogMessageType::INFO, "Initializing Window...", __FILE__, __LINE__);
+
 		m_bIsInitialized = false;
 
 		if (SDL_Init(SDL_INIT_VIDEO) < 0)
 		{
+			LogManager::LogMessage(LogMessageType::FATAL_ERROR, "Failed to Initialize SDL_VIDEO!", __FILE__, __LINE__);
 			return m_bIsInitialized;
 		}
 
@@ -29,6 +33,7 @@ namespace DRE
 		if (!m_pSDLWindow)
 		{
 			Shutdown();
+			LogManager::LogMessage(LogMessageType::FATAL_ERROR, "Failed to Create Window!", __FILE__, __LINE__);
 			return m_bIsInitialized;
 		}
 
@@ -50,13 +55,14 @@ namespace DRE
 
 	void Window::Shutdown()
 	{
+		LogManager::LogMessage(LogMessageType::INFO, "Shutting Down Window...", __FILE__, __LINE__);
+
 		SDL_GL_DeleteContext(m_SDLContext);
 
 		SDL_DestroyWindow(m_pSDLWindow);
 
 		P_DELETE(m_WindowTitle);
 		P_DELETE(m_pWindowRect);
-		P_DELETE(m_pSDLWindow);
 	}
 
 	void Window::ToggleFullscreen()

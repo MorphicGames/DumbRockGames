@@ -3,6 +3,8 @@
 
 #pragma once
 
+#include "DRE_typedef.h"
+
 #include <glew.h>
 
 namespace DRE
@@ -10,34 +12,46 @@ namespace DRE
 	class Model
 	{
 	private:
-		GLuint* m_VAO;
+		GLuint m_VAO;
+		U32 m_FaceCount;
 
 	public:
-		Model(GLfloat* vertices, GLfloat* colour, GLfloat* UV, GLfloat* indices) {
+		Model(GLfloat* meshData, U32 faceCount, GLfloat* indices) 
+			: m_FaceCount(faceCount)
+		{
 			GLuint VBO;
 			glGenBuffers(1, &VBO);
 
-			glGenVertexArrays(1, m_VAO);
+			glGenVertexArrays(1, &m_VAO);
 
 			GLuint EBO;
 			glGenBuffers(1, &EBO);
 
-			glBindVertexArray(*m_VAO);
+			glBindVertexArray(m_VAO);
 				glBindBuffer(GL_ARRAY_BUFFER, VBO);
-				glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+				glBufferData(GL_ARRAY_BUFFER, sizeof(meshData), meshData, GL_STATIC_DRAW);
 
 				glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
 				glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
-				glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GLfloat), (GLvoid*)0);
+				glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat), (GLvoid*)0);
 				glEnableVertexAttribArray(0);
+				glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat), (GLvoid*)(3 * sizeof(GLfloat)));
+				glEnableVertexAttribArray(1);
+				glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat), (GLvoid*)(6 * sizeof(GLfloat)));
+				glEnableVertexAttribArray(2);
 			glBindVertexArray(0);
 
 		}
 
-		~Model() {
-			delete[] m_VAO;
-			m_VAO = nullptr;
+		GLuint GetVAO() const
+		{
+			return m_VAO;
+		}
+
+		U32 GetFaceCount() const
+		{
+			return m_FaceCount;
 		}
 	};
 }
