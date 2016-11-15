@@ -73,6 +73,35 @@ namespace DRE
 		m_pShaderProgram->AttachShader("TestFragementShader");
 		m_pShaderProgram->LinkProgram();
 
+		GLfloat meshData[] = {
+				//Position		   //Colour	        //Texture
+			 0.0f, 0.0f, 0.0f,	1.0f, 0.0f, 0.0f,	0.0f, 0.0f,
+			 0.5f, 0.0f, 0.0f,	0.0f, 1.0f, 0.0f,	0.0f, 0.0f,
+			 0.5f, 0.5f, 0.0f,	0.0f, 0.0f, 1.0f,	0.0f, 0.0f,
+			 0.0f, 0.5f, 0.0f,	1.0f, 0.0f, 0.0f,	0.0f, 0.0f,
+			 0.0f, 0.0f, 0.5f,	0.0f, 1.0f, 0.0f,	0.0f, 0.0f,
+			 0.5f, 0.0f, 0.5f,	0.0f, 0.0f, 1.0f,	0.0f, 0.0f,
+			 0.5f, 0.5f, 0.5f,	1.0f, 0.0f, 0.0f,	0.0f, 0.0f,
+			 0.0f, 0.5f, 0.5f,	0.0f, 1.0f, 0.0f,	0.0f, 0.0f
+		};
+
+		GLuint indices[] = {
+			 0, 1, 2, 
+			 2, 3, 0, 
+			 0, 4, 1, 
+			 1, 5, 4,
+			 0, 4, 3, 
+			 3, 7, 4, 
+			 4, 5, 6, 
+			 6, 7, 4, 
+			 1, 5, 6, 
+			 6, 2, 1, 
+			 3, 7, 6, 
+			 6, 2, 3 
+		};
+
+		m_pModelManager->AddModel("SimpleBox", new Model(meshData, 12, indices));
+
 		return true;
 	}
 
@@ -98,6 +127,8 @@ namespace DRE
 
 	void TesterGame::Render()
 	{
+		m_pShaderProgram->UseProgram();
+		m_pAbstractRenderer->RenderModel(m_pModelManager->GetModel("SimpleBox"));
 	}
 
 	void TesterGame::PostRender()

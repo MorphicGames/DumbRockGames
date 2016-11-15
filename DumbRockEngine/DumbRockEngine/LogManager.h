@@ -5,6 +5,7 @@
 
 #include <string>
 #include <fstream>
+#include <iostream>
 
 namespace DRE
 {
@@ -49,6 +50,12 @@ namespace DRE
 			}
 
 			output.close();
+
+			ConsoleMessage(message);
+		}
+
+		static void ConsoleMessage(const std::string& message) {
+			std::cout << message << std::endl;
 		}
 	};
 }

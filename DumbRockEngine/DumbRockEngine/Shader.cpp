@@ -36,19 +36,19 @@ namespace DRE
 		switch (shaderType)
 		{
 		case ShaderType::VERTEX:
-			LogManager::LogMessage(LogMessageType::ERROR, "Creating Vertex Shader", __FILE__, __LINE__);
+			LogManager::LogMessage(LogMessageType::INFO, "Creating Vertex Shader", __FILE__, __LINE__);
 			this->m_Shader = glCreateShader(GL_VERTEX_SHADER);
 			break;
 		case ShaderType::FRAGMENT:
-			LogManager::LogMessage(LogMessageType::ERROR, "Creating Fragment Shader", __FILE__, __LINE__);
+			LogManager::LogMessage(LogMessageType::INFO, "Creating Fragment Shader", __FILE__, __LINE__);
 			this->m_Shader = glCreateShader(GL_FRAGMENT_SHADER);
 			break;
 		case ShaderType::TESSELLATION:
-			LogManager::LogMessage(LogMessageType::ERROR, "Creating Tessellation Shader", __FILE__, __LINE__);
+			LogManager::LogMessage(LogMessageType::INFO, "Creating Tessellation Shader", __FILE__, __LINE__);
 			this->m_Shader = glCreateShader(GL_ARB_tessellation_shader);
 			break;
 		case ShaderType::GEOMETRY:
-			LogManager::LogMessage(LogMessageType::ERROR, "Creating Geometry Shader", __FILE__, __LINE__);
+			LogManager::LogMessage(LogMessageType::INFO, "Creating Geometry Shader", __FILE__, __LINE__);
 			this->m_Shader = glCreateShader(GL_GEOMETRY_SHADER);
 			break;
 		}

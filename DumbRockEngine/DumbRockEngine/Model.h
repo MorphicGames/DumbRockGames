@@ -5,7 +5,7 @@
 
 #include "DRE_typedef.h"
 
-#include <glew.h>
+#include "OpenGL\glew-1.13.0\include\GL\glew.h"
 
 namespace DRE
 {
@@ -16,7 +16,7 @@ namespace DRE
 		U32 m_FaceCount;
 
 	public:
-		Model(GLfloat* meshData, U32 faceCount, GLfloat* indices) 
+		Model(GLfloat meshData[], U32 faceCount, GLuint indices[]) 
 			: m_FaceCount(faceCount)
 		{
 			GLuint VBO;
@@ -36,12 +36,13 @@ namespace DRE
 
 				glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat), (GLvoid*)0);
 				glEnableVertexAttribArray(0);
+
 				glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat), (GLvoid*)(3 * sizeof(GLfloat)));
 				glEnableVertexAttribArray(1);
-				glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat), (GLvoid*)(6 * sizeof(GLfloat)));
+
+				glVertexAttribPointer(2, 2, GL_UNSIGNED_INT, GL_FALSE, 8 * sizeof(GLfloat), (GLvoid*)(6 * sizeof(GLfloat)));
 				glEnableVertexAttribArray(2);
 			glBindVertexArray(0);
-
 		}
 
 		GLuint GetVAO() const

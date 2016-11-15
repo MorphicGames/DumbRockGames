@@ -31,12 +31,12 @@ namespace DRE
 			return 0;
 		}
 
-		ResourceType GetResource(const std::string& name) {
+		ResourceType* GetResource(const std::string& name) {
 			std::map<std::string, ResourceType*>::iterator tmp = resourceNameTable->find(name);
 			return tmp->second;
 		}
 
-		ResourceType GetResource(int resourceIndex) {
+		ResourceType* GetResource(int resourceIndex) {
 			std::map<std::string, ResourceType*>::iterator tmp = resourceNameTable->at(resourceIndex);
 			return tmp->second;
 		}

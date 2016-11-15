@@ -5,7 +5,7 @@
 
 #include "ResourceManager.h"
 
-class Model;
+#include "Model.h"
 
 namespace DRE
 {
@@ -23,6 +23,8 @@ namespace DRE
 		static ModelManager* GetInstance();
 
 		void AddModel(const std::string& modelName, Model* model);
+
+		Model* GetModel(const std::string& modelName);
 	};
 }
 

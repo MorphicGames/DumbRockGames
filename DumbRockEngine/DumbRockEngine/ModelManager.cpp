@@ -27,4 +27,9 @@ namespace DRE
 	{
 		this->m_ModelList->AddResource(modelName, model);
 	}
+
+	Model* ModelManager::GetModel(const std::string& modelName)
+	{
+		return this->m_ModelList->GetResource(modelName);
+	}
 }
