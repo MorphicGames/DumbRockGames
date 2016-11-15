@@ -2,5 +2,7 @@ INFO: Created Game Engine - from: c:\users\morph\documents\github\dumbrockgames\
 INFO: Starting Game Engine - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrocktester\testergame.cpp at line: 45
 INFO: Initializing Window... - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\window.cpp at line: 22
 INFO: Initializing OpenGLRenderer... - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\openglrenderer.cpp at line: 51
-ERROR: Shader Compilation Failed - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\shader.cpp at line: 58
+ERROR: Created Vertex Shader - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\shader.cpp at line: 39
+ERROR: Shader Compilation Failed - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\shader.cpp at line: 62
+ERROR: Created Fragment Shader - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\shader.cpp at line: 43
 ERROR: Shader Linking Failed - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\shaderprogram.cpp at line: 47
