@@ -100,7 +100,7 @@ namespace DRE
 			 6, 2, 3 
 		};
 
-		m_pModelManager->AddModel("SimpleBox", new Model(meshData, 12, indices));
+		m_pModelManager->AddModel("SimpleBox", new Model(&meshData, 64, &indices, 12));
 
 		return true;
 	}

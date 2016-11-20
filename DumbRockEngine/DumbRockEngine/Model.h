@@ -16,7 +16,7 @@ namespace DRE
 		U32 m_FaceCount;
 
 	public:
-		Model(GLfloat meshData[], U32 faceCount, GLuint indices[]) 
+		Model(GLfloat* meshData, U32 meshDataLength, GLfloat* indices, U32 faceCount) 
 			: m_FaceCount(faceCount)
 		{
 			GLuint VBO;
