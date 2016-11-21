@@ -71,8 +71,6 @@ namespace DRE
 
 	void OpenGLRenderer::RenderModel(Model* renderTarget)
 	{
-		glBindVertexArray(renderTarget->GetVAO());
-		glDrawElements(m_RenderPrimitive, renderTarget->GetFaceCount(), GL_UNSIGNED_INT, 0);
 		glBindVertexArray(0);
 	}
 }
