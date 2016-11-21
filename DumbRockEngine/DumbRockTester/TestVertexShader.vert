@@ -2,7 +2,7 @@
 layout (location = 0) in vec3 position;
 layout (location = 1) in vec3 colour;
 
-out vec3 ourColour;
+out vec3 outColour;
 
 void main()
 {

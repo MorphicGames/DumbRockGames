@@ -31,6 +31,8 @@ namespace DRE
 
 		const GLchar* shaderCode = fileCode.c_str();
 
+		//LogManager::ConsoleMessage(fileCode);
+
 		GLint success;
 
 		switch (shaderType)
@@ -61,6 +63,10 @@ namespace DRE
 		{
 			LogManager::LogMessage(LogMessageType::ERROR, "Shader Compilation Failed", __FILE__, __LINE__);
 		}
+		else
+		{
+			LogManager::LogMessage(LogMessageType::INFO, "Shader Compilation Succeeded", __FILE__, __LINE__);
+		}	
 	}
 
 	Shader::~Shader()

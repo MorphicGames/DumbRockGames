@@ -24,7 +24,9 @@ namespace DRE
 
 	void ShaderProgram::AttachShader(const std::string& shaderName)
 	{
-		//Need to fully implement ShaderManager before can complete
+		Shader* tmp = m_pShaderManager->GetShader(shaderName);
+		LogManager::LogMessage(LogMessageType::INFO, "Attaching Shader to Shader Program", __FILE__, __LINE__);
+		glAttachShader(this->m_Program, tmp->GetShader());
 	}
 
 	void ShaderProgram::DetachShader(const Shader& shader)
@@ -50,6 +52,15 @@ namespace DRE
 		if (!success)
 		{
 			LogManager::LogMessage(LogMessageType::ERROR, "Shader Linking Failed", __FILE__, __LINE__);
+			GLint infoLogLength;
+			glGetProgramiv(this->m_Program, GL_INFO_LOG_LENGTH, &infoLogLength);
+			if (infoLogLength > 1)
+			{
+				GLchar* infoLog = (GLchar*)malloc(infoLogLength + 1);
+				glGetProgramInfoLog(this->m_Program, infoLogLength, &infoLogLength, infoLog);
+				LogManager::LogMessage(LogMessageType::ERROR, infoLog, __FILE__, __LINE__);
+				free(infoLog);
+			}
 		}
 	}
 

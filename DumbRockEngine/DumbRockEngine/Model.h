@@ -3,16 +3,23 @@
 
 #pragma once
 
-#include "DRE_typedef.h"
+#include <vector>
 
-#include "OpenGL\glew-1.13.0\include\GL\glew.h"
+#include "Mesh.h"
+#include "DRE_typedef.h"
 
 namespace DRE
 {
 	class Model
 	{
+	private:
+		std::vector<Mesh> meshes;
+
 	public:
-		virtual ~Model() = 0;
+		Model()
+		{
+
+		}
 	};
 }
 

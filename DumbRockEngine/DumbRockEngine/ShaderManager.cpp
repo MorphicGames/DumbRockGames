@@ -27,4 +27,9 @@ namespace DRE
 	{
 		this->m_ShaderList->AddResource(shaderName, shader);
 	}
+
+	Shader* ShaderManager::GetShader(const std::string& shaderName)
+	{
+		return this->m_ShaderList->GetResource(shaderName);
+	}
 }

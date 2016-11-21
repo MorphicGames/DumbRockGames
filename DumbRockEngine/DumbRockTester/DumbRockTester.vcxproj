@@ -130,11 +130,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="SimpleBox.cpp" />
     <ClCompile Include="TesterGame.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SimpleBox.h" />
     <ClInclude Include="TesterGame.h" />
   </ItemGroup>
   <ItemGroup>

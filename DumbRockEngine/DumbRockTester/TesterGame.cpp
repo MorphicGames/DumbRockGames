@@ -1,7 +1,5 @@
 #include "TesterGame.h"
 
-#include "SimpleBox.h"
-
 namespace DRE
 {
 	TesterGame::TesterGame()
@@ -68,14 +66,12 @@ namespace DRE
 		}
 
 		m_pShaderManager->AddShader("TestVertexShader", new Shader("TestVertexShader.vert", ShaderType::VERTEX));
-		m_pShaderManager->AddShader("TestFragementShader", new Shader("TestFragementShader.frag", ShaderType::FRAGMENT));
+		m_pShaderManager->AddShader("TestFragmentShader", new Shader("TestFragmentShader.frag", ShaderType::FRAGMENT));
 
 		m_pShaderProgram = new ShaderProgram(this->m_pShaderManager);
 		m_pShaderProgram->AttachShader("TestVertexShader");
-		m_pShaderProgram->AttachShader("TestFragementShader");
+		m_pShaderProgram->AttachShader("TestFragmentShader");
 		m_pShaderProgram->LinkProgram();
-		
-		m_pModelManager->AddModel("SimpleBox", new SimpleBox());
 
 		return true;
 	}
