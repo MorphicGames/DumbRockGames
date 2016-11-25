@@ -22,6 +22,7 @@ namespace DRE
 	{
 	private:
 		GLuint VAO, VBO, EBO;
+
 		void SetupMesh()
 		{
 			glGenVertexArrays(1, &this->VAO);

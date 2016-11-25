@@ -151,6 +151,7 @@
     <ClInclude Include="DRE_typedef.h" />
     <ClInclude Include="Frustrum.h" />
     <ClInclude Include="GameEngine.h" />
+    <ClInclude Include="GameObject.h" />
     <ClInclude Include="LogManager.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="MaterialManager.h" />
