@@ -61,6 +61,35 @@ namespace DRE
 
 			this->SetupMesh();
 		}
+
+		void Render(ShaderProgram program)
+		{
+			GLuint diffuseNr = 1;
+			GLuint specularNr = 1;
+			for (GLuint i = 0; i < this->textures.size(); i++)
+			{
+				glActiveTexture(GL_TEXTURE0 + i);
+
+				std::stringstream ss;
+				std::string number;
+				std::string name = this->textures[i].type;
+				if (name == "texture_diffuse") {
+					ss << diffuseNr++;
+				}
+				else if (name == "texture_specular") {
+					ss << specularNr++;
+				}
+				number = ss.str();
+
+				glUniform1f(glGetUniformLocation(program.GetProgram(), ("material." + name + number).c_str()), i);
+				glBindTexture(GL_TEXTURE_2D, this->textures[i].id);
+			}
+			glActiveTexture(GL_TEXTURE0);
+
+			glBindVertexArray(this->VAO);
+			glDrawElements(GL_TRIANGLES, this->indices.size(), GL_UNSIGNED_INT, 0);
+			glBindVertexArray(0);
+		}
 	};
 }
 

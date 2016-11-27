@@ -12,6 +12,8 @@ namespace DRE
 	class Model;
 	class Window;
 
+	class ShaderProgram;
+
 	enum RenderEnvironment
 	{
 		TWO_D,
@@ -30,7 +32,7 @@ namespace DRE
 
 		virtual void ToggleWireframeMode() = 0;
 		virtual void ClearRenderer(Window* window) = 0;
-		virtual void RenderModel(Model* renderTarget) = 0;
+		virtual void RenderModel(Model* renderTarget, ShaderProgram program) = 0;
 	};
 }
 

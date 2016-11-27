@@ -16,6 +16,11 @@ namespace DRE
 		glDeleteProgram(this->m_Program);
 	}
 
+	GLuint ShaderProgram::GetProgram() const
+	{
+		return m_Program;
+	}
+
 	void ShaderProgram::AttachShader(const Shader& shader)
 	{
 		LogManager::LogMessage(LogMessageType::INFO, "Attaching Shader to Shader Program", __FILE__, __LINE__);

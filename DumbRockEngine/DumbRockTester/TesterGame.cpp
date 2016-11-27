@@ -22,9 +22,11 @@ namespace DRE
 	{
 		isRunning = this->OnStart();
 
+		Timer t;
+		t.Start();
+
 		while (isRunning)
 		{
-			Timer t;
 			t.UpdateFrameTicks();
 
 			this->Update();
@@ -73,6 +75,8 @@ namespace DRE
 		m_pShaderProgram->AttachShader("TestFragmentShader");
 		m_pShaderProgram->LinkProgram();
 
+		m_pModelManager->AddModel("TestModel", new Model("Assets/TestModel"));
+
 		return true;
 	}
 
@@ -83,7 +87,23 @@ namespace DRE
 
 	void TesterGame::Update()
 	{
+		SDL_Event SDLEvent;
 
+		while (SDL_PollEvent(&SDLEvent))
+		{
+			switch (SDLEvent.type)
+			{
+				case SDL_EventType::SDL_QUIT:
+				{
+					isRunning = false;
+					return;
+				}
+				default:
+				{
+					break;
+				}
+			}
+		}
 	}
 
 	void TesterGame::LateUpdate()

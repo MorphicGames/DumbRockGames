@@ -5,6 +5,7 @@
 #include "LogManager.h"
 
 #include "Model.h"
+#include "ShaderProgram.h"
 
 #include "SDL\include\SDL.h"
 
@@ -69,8 +70,8 @@ namespace DRE
 		SDL_GL_SwapWindow(window->GetSDLWindow());
 	}
 
-	void OpenGLRenderer::RenderModel(Model* renderTarget)
+	void OpenGLRenderer::RenderModel(Model* renderTarget, ShaderProgram program)
 	{
-		glBindVertexArray(0);
+		renderTarget->Render(program);
 	}
 }

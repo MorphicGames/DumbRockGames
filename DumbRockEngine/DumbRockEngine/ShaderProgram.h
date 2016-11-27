@@ -19,6 +19,8 @@ namespace DRE
 		ShaderProgram(ShaderManager* shaderManager);
 		~ShaderProgram();
 
+		GLuint GetProgram() const;
+
 		void AttachShader(const Shader& shader);
 		void AttachShader(const std::string& shaderName);
 		void DetachShader(const Shader& shader);

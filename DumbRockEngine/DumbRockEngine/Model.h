@@ -152,6 +152,14 @@ namespace DRE
 		{
 			this->LoadModel(path);
 		}
+
+		void Render(ShaderProgram program)
+		{
+			for (GLuint i = 0; i < meshes.size(); i++)
+			{
+				meshes[i].Render(program);
+			}
+		}
 	};
 }
 

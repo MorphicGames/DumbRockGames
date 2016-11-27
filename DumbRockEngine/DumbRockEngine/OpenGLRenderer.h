@@ -5,6 +5,7 @@
 
 #include "AbstractRenderer.h"
 
+#include "ShaderProgram.h"
 #include "Colour.h"
 
 namespace DRE
@@ -22,7 +23,7 @@ namespace DRE
 
 		virtual void ToggleWireframeMode();
 		virtual void ClearRenderer(Window* window);
-		virtual void RenderModel(Model* renderTarget);
+		virtual void RenderModel(Model* renderTarget, ShaderProgram program);
 
 	private:
 		bool m_bDrawWireframes;
