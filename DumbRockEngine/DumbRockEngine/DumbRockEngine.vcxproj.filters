@@ -40,6 +40,12 @@
     <ClCompile Include="ShaderProgram.cpp">
       <Filter>Source Files\Renderer</Filter>
     </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Source Files\Resources &amp; Managers\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Plane.cpp">
+      <Filter>Source Files\Defines and Macros</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameEngine.h">
@@ -120,6 +126,9 @@
     <ClInclude Include="GameObject.h">
       <Filter>Header Files\GameObject Components</Filter>
     </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Header Files\Defines and Macros</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -166,6 +175,12 @@
     </Filter>
     <Filter Include="Header Files\GameObject Components">
       <UniqueIdentifier>{d817b205-2c31-4ade-afcc-c46956a2d4df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Resources &amp; Managers\Resources">
+      <UniqueIdentifier>{535bcf63-3edf-460d-b00d-26a351f56d41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Defines and Macros">
+      <UniqueIdentifier>{3125af41-c294-4424-840f-8af7ec7cdee3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

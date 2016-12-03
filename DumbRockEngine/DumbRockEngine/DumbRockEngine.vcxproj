@@ -77,14 +77,14 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(ProjectDir)SDL\include;$(ProjectDir)OpenGL\glew-1.13.0\include\GL;$(ProjectDir)OpenGL\glut-3.7.6\include\GL;$(ProjectDir)OpenGL\glm\glm;$(ProjectDir)OpenGL\assimp-3.1.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)SDL\include;$(ProjectDir)OpenGL\glew-1.13.0\include\GL;$(ProjectDir)OpenGL\glut-3.7.6\include\GL;$(ProjectDir)OpenGL\glm\glm;$(ProjectDir)OpenGL\assimp\include;$(ProjectDir)OpenGL\Simple OpenGL Image Library\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
     </Link>
     <Lib>
-      <AdditionalLibraryDirectories>$(ProjectDir)SDL\lib\x86;$(ProjectDir)OpenGL\glew-1.13.0\lib\Release\win32;$(ProjectDir)OpenGL\glut-3.7.6\lib\glut\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>$(ProjectDir)SDL\lib\x86\SDL2.lib;$(ProjectDir)SDL\lib\x86\SDL2main.lib;$(ProjectDir)OpenGL\glew-1.13.0\lib\Release\win32\glew32.lib;$(ProjectDir)OpenGL\glew-1.13.0\lib\Release\win32\glew32s.lib;$(SolutionDir)DumbRockEngine\OpenGL\glut-3.7.6\lib\glut\Release\glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)SDL\lib\x86;$(ProjectDir)OpenGL\glew-1.13.0\lib\Release\win32;$(ProjectDir)OpenGL\glut-3.7.6\lib\glut\Release;$(ProjectDir)OpenGL\Simple OpenGL Image Library\lib;$(ProjectDir)OpenGL\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(ProjectDir)SDL\lib\x86\SDL2.lib;$(ProjectDir)SDL\lib\x86\SDL2main.lib;$(ProjectDir)OpenGL\glew-1.13.0\lib\Release\win32\glew32.lib;$(ProjectDir)OpenGL\glew-1.13.0\lib\Release\win32\glew32s.lib;$(SolutionDir)DumbRockEngine\OpenGL\glut-3.7.6\lib\glut\Release\glut32.lib;$(ProjectDir)OpenGL\Simple OpenGL Image Library\lib\SOIL.lib;$(ProjectDir)OpenGL\assimp\lib\Debug\assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Lib>
   </ItemDefinitionGroup>
@@ -159,6 +159,7 @@
     <ClInclude Include="Model.h" />
     <ClInclude Include="ModelManager.h" />
     <ClInclude Include="OpenGLRenderer.h" />
+    <ClInclude Include="Plane.h" />
     <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="ShaderManager.h" />
@@ -175,8 +176,10 @@
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Frustrum.cpp" />
     <ClCompile Include="MaterialManager.cpp" />
+    <ClCompile Include="Model.cpp" />
     <ClCompile Include="ModelManager.cpp" />
     <ClCompile Include="OpenGLRenderer.cpp" />
+    <ClCompile Include="Plane.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="ShaderManager.cpp" />

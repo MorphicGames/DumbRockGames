@@ -10,6 +10,4 @@ INFO: Created Shader Program - from: c:\users\morph\documents\github\dumbrockgam
 INFO: Attaching Shader to Shader Program - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\shaderprogram.cpp at line: 33
 INFO: Attaching Shader to Shader Program - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\shaderprogram.cpp at line: 33
 INFO: Linking Shader Program - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\shaderprogram.cpp at line: 50
-INFO: Ending Game Engine - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrocktester\testergame.cpp at line: 83
-INFO: Destroying Game Engine - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrocktester\testergame.cpp at line: 17
-INFO: Ending Game Engine - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrocktester\testergame.cpp at line: 83
+ERROR: Unable to open file "Assets/TestModel". - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\model.cpp at line: 18

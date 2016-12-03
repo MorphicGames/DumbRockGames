@@ -5,7 +5,7 @@
 
 #include <string>
 #include "OpenGL\glew-1.13.0\include\GL\glew.h"
-#include "OpenGL\assimp-3.1.1\include\assimp\Importer.hpp"
+#include "OpenGL\assimp\include\assimp\Importer.hpp"
 
 namespace DRE
 {
