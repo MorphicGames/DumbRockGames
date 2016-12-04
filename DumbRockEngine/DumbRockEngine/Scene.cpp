@@ -6,6 +6,7 @@ namespace DRE
 {
 	Scene::Scene()
 	{
+
 		rootNode.reset(nullptr);
 
 		rootNode.reset(new GameObject(this, ROOT_NAME));

@@ -11,14 +11,16 @@
 #include "Transform.h"
 #include "DRE_typedef.h"
 
-class Scene;
+
 
 namespace DRE
-{
+{	
+	class Scene;
+
 	class GameObject
 	{
 	public:
-		explicit GameObject(Scene* scene, std::string name = "");
+		explicit GameObject(Scene* scene, std::string name =  "" );
 		virtual ~GameObject();
 
 		virtual void Update(const F32 deltaTime);

@@ -12,10 +12,11 @@
 
 #define ROOT_NAME "RootNode"
 
-class Game;
 
 namespace DRE
 {
+	class Game;
+
 	class Scene
 	{
 		friend class Game;

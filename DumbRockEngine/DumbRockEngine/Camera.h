@@ -10,10 +10,10 @@
 #include "Frustrum.h"
 #include "GameObject.h"
 
-class Scene;
-
 namespace DRE
 {
+	class Scene;
+
 	class Camera : public GameObject
 	{
 	public:

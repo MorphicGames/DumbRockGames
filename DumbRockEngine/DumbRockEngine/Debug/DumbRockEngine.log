@@ -1,14 +1,1 @@
-﻿  Scene.cpp
-c:\users\tjrap\source\repos\dumbrockgames\dumbrockengine\dumbrockengine\scene.cpp(11): error C2664: 'DRE::GameObject::GameObject(const DRE::GameObject &)': cannot convert argument 1 from 'DRE::Scene *' to 'Scene *'
-  c:\users\tjrap\source\repos\dumbrockgames\dumbrockengine\dumbrockengine\scene.cpp(11): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
-c:\users\tjrap\source\repos\dumbrockgames\dumbrockengine\dumbrockengine\scene.cpp(16): error C2664: 'DRE::Camera::Camera(const DRE::Camera &)': cannot convert argument 1 from 'DRE::Scene *' to 'Scene *'
-  c:\users\tjrap\source\repos\dumbrockgames\dumbrockengine\dumbrockengine\scene.cpp(16): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
-  Generating Code...
-  Compiling...
-  Camera.cpp
-c:\users\tjrap\source\repos\dumbrockgames\dumbrockengine\dumbrockengine\mesh.h(84): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
-c:\users\tjrap\source\repos\dumbrockgames\dumbrockengine\dumbrockengine\camera.cpp(34): warning C4244: '=': conversion from 'Sint32' to 'float', possible loss of data
-c:\users\tjrap\source\repos\dumbrockgames\dumbrockengine\dumbrockengine\camera.cpp(35): warning C4244: '=': conversion from 'Sint32' to 'float', possible loss of data
-  Generating Code...
-  Skipping... (no relevant changes detected)
-  GameObject.cpp
+﻿LINK : fatal error LNK1181: cannot open input file 'C:\Users\tjrap\Source\Repos\DumbRockGames\DumbRockEngine\DumbRockEngine\OpenGL\glut-3.7.6\lib\glut\Release\glut32.lib'
