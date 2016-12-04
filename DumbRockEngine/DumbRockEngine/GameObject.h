@@ -11,6 +11,8 @@
 #include "Transform.h"
 #include "DRE_typedef.h"
 
+class Scene;
+
 namespace DRE
 {
 	class GameObject

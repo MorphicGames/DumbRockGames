@@ -28,7 +28,7 @@ namespace DRE
 		F32 speed;
 		F32 mouseSpeed;
 
-		Camera(Scene* scene);
+		Camera(const Scene* scene);
 		~Camera();
 
 		virtual void Update(const F32 deltaTime) override;
