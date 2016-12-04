@@ -39,7 +39,7 @@ namespace DRE
 		{
 			GameObject* tmp = (*iter);
 
-			if (tmp && tmp->CheckEnabled)
+			if (tmp && tmp->CheckEnabled())
 			{
 				tmp->Update(timeStep);
 			}

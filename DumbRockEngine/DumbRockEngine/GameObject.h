@@ -5,11 +5,13 @@
 
 #include <vector>
 
-#include "Scene.h"
+//#include "Scene.h"
 
 #include "Component.h"
 #include "Transform.h"
 #include "DRE_typedef.h"
+
+class Scene;
 
 namespace DRE
 {
