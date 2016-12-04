@@ -16,62 +16,28 @@ namespace DRE
 {
 	OpenGLRenderer::OpenGLRenderer()
 	{
-		m_bDrawWireframes = false;
-		m_RenderPrimitive = NULL;
-		m_pClearColour = nullptr;
+		glEnable(GL_DEPTH_TEST);
+		glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+
+		glEnable(GL_CULL_FACE);
+		glEnable(GL_DEPTH_TEST);
+		glCullFace(GL_FRONT);
+		glDepthFunc(GL_LESS);
+		glDepthMask(GL_TRUE);
+		glFrontFace(GL_CCW);
+		glEnable(GL_BLEND);
+		glBlendFuncSeparate(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA, GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
 	}
 
 	OpenGLRenderer::~OpenGLRenderer()
 	{
-		P_DELETE(m_pClearColour);
+
 	}
 
-	void OpenGLRenderer::SetClearColour(Colour* colour)
+	void OpenGLRenderer::RenderPrimitive(PrimitiveType prim)
 	{
-		this->m_pClearColour = colour;
-	}
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-	void OpenGLRenderer::SetRenderPrimitive(unsigned int primitive)
-	{
-		this->m_RenderPrimitive = primitive;
-	}
-
-	void OpenGLRenderer::ToggleWireframeMode()
-	{
-		m_bDrawWireframes = !m_bDrawWireframes;
-		if (m_bDrawWireframes) {
-			glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-		}
-		else {
-			glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
-		}
-	}
-
-	bool OpenGLRenderer::Initialize()
-	{
-		LogManager::LogMessage(LogMessageType::INFO, "Initializing OpenGLRenderer...", __FILE__, __LINE__);
-
-		if (!m_RenderPrimitive) {
-			m_RenderPrimitive = GL_TRIANGLES;
-		}
-
-		if (!m_pClearColour) {
-			m_pClearColour = new Colour(0.0f, 0.0f, 0.0f, 1.0f);
-		}
-
-		return true;
-	}
-
-	void OpenGLRenderer::ClearRenderer(Window* window)
-	{
-		glClearColor(m_pClearColour->r, m_pClearColour->g, m_pClearColour->b, m_pClearColour->a);
-		glClear(GL_COLOR_BUFFER_BIT);
-
-		SDL_GL_SwapWindow(window->GetSDLWindow());
-	}
-
-	void OpenGLRenderer::RenderModel(Model* renderTarget, ShaderProgram program)
-	{
-		renderTarget->Render(program);
+		glMatrixMode(GL_MODELVIEW);
 	}
 }

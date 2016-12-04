@@ -5,34 +5,27 @@
 
 #include "DRE_defines.h"
 
+#include "Window.h"
+
 namespace DRE
 {
-	struct Colour;
-
-	class Model;
-	class Window;
-
-	class ShaderProgram;
-
-	enum RenderEnvironment
+	enum PrimitiveType
 	{
-		TWO_D,
-		THREE_D
+		NONE,
+		QUADS,
+		TRIANGLES
 	};
 
 	class AbstractRenderer
 	{
 	public:
+		AbstractRenderer() {}
 		virtual ~AbstractRenderer() {}
 
-		virtual void SetClearColour(Colour* colour) = 0;
-		virtual void SetRenderPrimitive(unsigned int primitive) = 0;
+		virtual void RenderPrimitive(PrimitiveType prim) = 0;
 
-		virtual bool Initialize() = 0;
-
-		virtual void ToggleWireframeMode() = 0;
-		virtual void ClearRenderer(Window* window) = 0;
-		virtual void RenderModel(Model* renderTarget, ShaderProgram program) = 0;
+	protected:
+		Window* windowRef;
 	};
 }
 

@@ -4,14 +4,17 @@
 #pragma once
 
 #include <glew.h>
-#include <glm.hpp>
 
+#include "OpenGL\glm\glm\glm.hpp"
 #include "DRE_typedef.h"
 #include "Frustrum.h"
+#include "GameObject.h"
+
+class Scene;
 
 namespace DRE
 {
-	class Camera
+	class Camera : public GameObject
 	{
 	public:
 		Frustrum frustrum;
@@ -22,12 +25,14 @@ namespace DRE
 		F32 horizontalAngle;
 		F32 verticalAngle;
 		F32 initialFOV;
+		F32 speed;
+		F32 mouseSpeed;
 
-		Camera();
+		Camera(Scene* scene);
 		~Camera();
 
-		void Update();
-		void Render();
+		virtual void Update(const F32 deltaTime) override;
+		virtual void Render() override;
 
 		void CalculateCameraMatrix();
 

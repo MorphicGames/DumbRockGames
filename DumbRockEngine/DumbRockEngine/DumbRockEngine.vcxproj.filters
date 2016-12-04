@@ -46,11 +46,20 @@
     <ClCompile Include="Plane.cpp">
       <Filter>Source Files\Defines and Macros</Filter>
     </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Source Files\Resources &amp; Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Source Files\GameObject Components</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GameEngine.h">
-      <Filter>Header Files\Core</Filter>
-    </ClInclude>
     <ClInclude Include="LogManager.h">
       <Filter>Header Files\Core</Filter>
     </ClInclude>
@@ -111,9 +120,6 @@
     <ClInclude Include="Colour.h">
       <Filter>Header Files\Renderer</Filter>
     </ClInclude>
-    <ClInclude Include="Transform.hpp">
-      <Filter>Header Files\GameObject Components</Filter>
-    </ClInclude>
     <ClInclude Include="ShaderManager.h">
       <Filter>Header Files\Resources &amp; Managers</Filter>
     </ClInclude>
@@ -128,6 +134,21 @@
     </ClInclude>
     <ClInclude Include="Plane.h">
       <Filter>Header Files\Defines and Macros</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Header Files\Resources &amp; Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>Header Files\GameObject Components\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>Header Files\GameObject Components\Components</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -181,6 +202,12 @@
     </Filter>
     <Filter Include="Source Files\Defines and Macros">
       <UniqueIdentifier>{3125af41-c294-4424-840f-8af7ec7cdee3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObject Components\Components">
+      <UniqueIdentifier>{0de0b68a-cdea-4ae3-a5d7-b68e309899c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameObject Components">
+      <UniqueIdentifier>{e0afed9d-92a8-4433-9482-814af38f46d9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

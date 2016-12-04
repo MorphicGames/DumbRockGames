@@ -7,23 +7,18 @@
 
 #include "Model.h"
 
+#define MODEL_MANAGER DRE::ModelManager::Instance()
+
 namespace DRE
 {
 	class ModelManager
 	{
 	private:
 		ModelManager();
-		~ModelManager();
-
 		ResourceManager<Model>* m_ModelList;
-
-		static ModelManager* m_pInstance;
-
 	public:
-		static ModelManager* GetInstance();
-
+		static ModelManager& Instance();
 		void AddModel(const std::string& modelName, Model* model);
-
 		Model* GetModel(const std::string& modelName);
 	};
 }

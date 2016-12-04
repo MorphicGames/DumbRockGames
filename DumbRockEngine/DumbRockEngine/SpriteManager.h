@@ -5,6 +5,8 @@
 
 #include "ResourceManager.h"
 
+#define SPRITE_MANAGER DRE::SpriteManager::Instance()
+
 class Sprite;
 
 namespace DRE
@@ -13,14 +15,9 @@ namespace DRE
 	{
 	private:
 		SpriteManager();
-		~SpriteManager();
-
 		ResourceManager<Sprite>* m_SpriteList;
-
-		static SpriteManager* m_pInstance;
-
 	public:
-		static SpriteManager* GetInstance();
+		static SpriteManager& Instance();
 	};
 }
 

@@ -5,6 +5,8 @@
 
 #include "ResourceManager.h"
 
+#define TEXTURE_MANAGER DRE::TextureManager::Instance()
+
 class Texture;
 
 namespace DRE
@@ -13,14 +15,9 @@ namespace DRE
 	{
 	private:
 		TextureManager();
-		~TextureManager();
-
 		ResourceManager<Texture>* m_TextureList;
-
-		static TextureManager* m_pInstance;
-
 	public:
-		static TextureManager* GetInstance();
+		static TextureManager& Instance();
 	};
 }
 

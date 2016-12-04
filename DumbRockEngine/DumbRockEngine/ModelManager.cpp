@@ -2,15 +2,10 @@
 
 namespace DRE
 {
-	ModelManager* ModelManager::m_pInstance = nullptr;
-
-	ModelManager* ModelManager::GetInstance()
+	ModelManager& ModelManager::Instance()
 	{
-		if (m_pInstance == nullptr)
-		{
-			m_pInstance = new ModelManager();
-		}
-		return m_pInstance;
+		static ModelManager *instance = new ModelManager();
+		return *instance;
 	}
 
 	ModelManager::ModelManager()
@@ -18,18 +13,13 @@ namespace DRE
 		m_ModelList = new ResourceManager<Model>();
 	}
 
-	ModelManager::~ModelManager()
-	{
-		
-	}
-
 	void ModelManager::AddModel(const std::string& modelName, Model* model)
 	{
-		this->m_ModelList->AddResource(modelName, model);
+		m_ModelList->AddResource(modelName, model);
 	}
 
 	Model* ModelManager::GetModel(const std::string& modelName)
 	{
-		return this->m_ModelList->GetResource(modelName);
+		return m_ModelList->GetResource(modelName);
 	}
 }

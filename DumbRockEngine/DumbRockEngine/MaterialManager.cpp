@@ -2,24 +2,14 @@
 
 namespace DRE
 {
-	MaterialManager* MaterialManager::m_pInstance = nullptr;
-
-	MaterialManager* MaterialManager::GetInstance()
+	MaterialManager& MaterialManager::Instance()
 	{
-		if (m_pInstance == nullptr)
-		{
-			m_pInstance = new MaterialManager();
-		}
-		return m_pInstance;
+		static MaterialManager *instance = new MaterialManager();
+		return *instance;
 	}
 
 	MaterialManager::MaterialManager()
 	{
 		m_MaterialList = new ResourceManager<Material>();
-	}
-
-	MaterialManager::~MaterialManager()
-	{
-
 	}
 }

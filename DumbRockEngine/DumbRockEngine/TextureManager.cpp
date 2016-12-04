@@ -2,24 +2,14 @@
 
 namespace DRE
 {
-	TextureManager* TextureManager::m_pInstance = nullptr;
-
-	TextureManager* TextureManager::GetInstance()
+	TextureManager& TextureManager::Instance()
 	{
-		if (m_pInstance == nullptr)
-		{
-			m_pInstance = new TextureManager();
-		}
-		return m_pInstance;
+		static TextureManager *instance = new TextureManager();
+		return *instance;
 	}
 
 	TextureManager::TextureManager()
 	{
 		m_TextureList = new ResourceManager<Texture>();
-	}
-
-	TextureManager::~TextureManager()
-	{
-
 	}
 }

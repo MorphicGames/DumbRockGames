@@ -130,10 +130,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="TesterGame.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="TesterGame.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="TestFragmentShader.frag" />

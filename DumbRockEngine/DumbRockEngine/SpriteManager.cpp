@@ -2,24 +2,14 @@
 
 namespace DRE
 {
-	SpriteManager* SpriteManager::m_pInstance = nullptr;
-
-	SpriteManager* SpriteManager::GetInstance()
+	SpriteManager& SpriteManager::Instance()
 	{
-		if (m_pInstance == nullptr)
-		{
-			m_pInstance = new SpriteManager();
-		}
-		return m_pInstance;
+		static SpriteManager *instance = new SpriteManager();
+		return *instance;
 	}
 
 	SpriteManager::SpriteManager()
 	{
 		m_SpriteList = new ResourceManager<Sprite>();
-	}
-
-	SpriteManager::~SpriteManager()
-	{
-
 	}
 }

@@ -5,6 +5,7 @@
 
 namespace DRE
 {
+//Pointer Delete Macro
 #define P_DELETE(x) { delete x; x = nullptr; }
 }
 

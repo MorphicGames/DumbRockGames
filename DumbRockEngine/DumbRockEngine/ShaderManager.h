@@ -7,20 +7,18 @@
 
 #include "Shader.h"
 
+#define SHADER_MANAGER DRE::ShaderManager::Instance()
+
 namespace DRE
 {
 	class ShaderManager
 	{
 	private:
 		ShaderManager();
-		~ShaderManager();
 
 		ResourceManager<Shader>* m_ShaderList;
-
-		static ShaderManager* m_pInstance;
-
 	public:
-		static ShaderManager* GetInstance();
+		static ShaderManager& Instance();
 
 		void AddShader(const std::string& shaderName, Shader* shader);
 		Shader* GetShader(const std::string& shaderName);

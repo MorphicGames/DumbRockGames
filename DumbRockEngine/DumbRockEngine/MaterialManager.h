@@ -5,6 +5,8 @@
 
 #include "ResourceManager.h"
 
+#define MATERIAL_MANAGER DRE::MaterialManager::Instance()
+
 class Material;
 
 namespace DRE
@@ -13,14 +15,9 @@ namespace DRE
 	{
 	private:
 		MaterialManager();
-		~MaterialManager();
-
 		ResourceManager<Material>* m_MaterialList;
-
-		static MaterialManager* m_pInstance;
-
 	public:
-		static MaterialManager* GetInstance();
+		static MaterialManager& Instance();
 	};
 }
 

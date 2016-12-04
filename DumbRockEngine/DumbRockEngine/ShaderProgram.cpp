@@ -4,8 +4,7 @@
 
 namespace DRE
 {
-	ShaderProgram::ShaderProgram(ShaderManager* shaderManager)
-		: m_pShaderManager(shaderManager)
+	ShaderProgram::ShaderProgram()
 	{
 		LogManager::LogMessage(LogMessageType::INFO, "Created Shader Program", __FILE__, __LINE__);
 		this->m_Program = glCreateProgram();
@@ -29,7 +28,7 @@ namespace DRE
 
 	void ShaderProgram::AttachShader(const std::string& shaderName)
 	{
-		Shader* tmp = m_pShaderManager->GetShader(shaderName);
+		Shader* tmp = SHADER_MANAGER.GetShader(shaderName);
 		LogManager::LogMessage(LogMessageType::INFO, "Attaching Shader to Shader Program", __FILE__, __LINE__);
 		glAttachShader(this->m_Program, tmp->GetShader());
 	}
@@ -42,7 +41,9 @@ namespace DRE
 
 	void ShaderProgram::DetachShader(const std::string& shaderName)
 	{
-		//Need to fully implement ShaderManager before can complete
+		Shader* tmp = SHADER_MANAGER.GetShader(shaderName);
+		LogManager::LogMessage(LogMessageType::INFO, "Detaching Shader from Shader Program", __FILE__, __LINE__);
+		glDetachShader(this->m_Program, tmp->GetShader());
 	}
 
 	void ShaderProgram::LinkProgram()

@@ -2,15 +2,10 @@
 
 namespace DRE
 {
-	ShaderManager* ShaderManager::m_pInstance = nullptr;
-
-	ShaderManager* ShaderManager::GetInstance()
+	ShaderManager& ShaderManager::Instance()
 	{
-		if (m_pInstance == nullptr)
-		{
-			m_pInstance = new ShaderManager();
-		}
-		return m_pInstance;
+		static ShaderManager *instance = new ShaderManager();
+		return *instance;
 	}
 
 	ShaderManager::ShaderManager()
@@ -18,18 +13,13 @@ namespace DRE
 		m_ShaderList = new ResourceManager<Shader>();
 	}
 
-	ShaderManager::~ShaderManager()
-	{
-
-	}
-
 	void ShaderManager::AddShader(const std::string& shaderName, Shader* shader)
 	{
-		this->m_ShaderList->AddResource(shaderName, shader);
+		m_ShaderList->AddResource(shaderName, shader);
 	}
 
 	Shader* ShaderManager::GetShader(const std::string& shaderName)
 	{
-		return this->m_ShaderList->GetResource(shaderName);
+		return m_ShaderList->GetResource(shaderName);
 	}
 }

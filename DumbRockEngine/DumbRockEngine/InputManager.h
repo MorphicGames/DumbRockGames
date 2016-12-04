@@ -1,103 +1,55 @@
-#pragma once
-#ifndef INPUTMANAGER_H_DEFIND
-#define INPUTMANAGER_H_DEFIND
+#ifndef _INPUTMANAGER_H
+#define _INPUTMANAGER_H
 
-#include "SDL.h"
+#include "SDL\include\SDL.h"
+#include <map>
+#include "OpenGL\glm\glm\glm.hpp"
 
-class InputManager
+#include "DRE_typedef.h"
+
+#define INPUT_MANAGER DRE::InputManager::Instance()
+
+namespace DRE
 {
-public:
-	static InputManager* getInstance();
+	class InputManager
+	{
+	private:
+		InputManager();
 
-	//THIS WILL UPDATE THE ENTIRE GAME INPUT STATE.
-	//THIS SHOULD BE CALLED AT EVERY FRAME  TO ASSURE EXPECTED BEHAVAIOUR.
-	//THIS WILL PRIMARY BE RESPONSIBLE FOR CHECKING THE KEYBOARD AND MOUSE CALLS.
-	void update(float cameraX = 0, float cameraY = 0);
+	public:
+		static InputManager& Instance();
 
-	//TELLS IF KEY IS DOWN
-	bool isKeyDown(int key);
+		SDL_MouseMotionEvent motionEvent;
 
-	//TELLS IF KEY IS UP
-	bool isKeyUp(int Key);
+		void Update();
+		void ProcessInput(SDL_Event& SDLEvent);
 
-	//TELLS IF THE MOUSE BUTTON IS DOWN
-	bool isMouseDown(uint8_t button);
+		void PressKey(SDL_Keycode keyID);
+		void ReleaseKey(SDL_Keycode keyID);
 
-	//TELLS IF THE MOUSE BUTTON IS UP
-	bool isMouseUp(uint8_t button);
+		void HitMouse(Uint8 key);
+		void ReleaseMouse(Uint8 key);
+		void SetMouseCoord(const F32 x, const F32 y);
 
-	//TELLS IF THE "KEY" IS CURRENTLY BEING PRESSED
-	bool isKeyPressed(int Key);
+		bool IsKeyDown(SDL_Keycode key);
+		bool IsKeyPressed(SDL_Keycode key);
+		bool IsKeyReleased(SDL_Keycode key);
+		bool IsAnyKeyDown();
 
-	//TELLS IF THE MOUSE "BUTTON" IS CURRENTLY BEING PRESSED
-	bool isMousePressed(uint8_t button);
+		bool IsMouseButtonDown(Uint8 button);
+		bool IsMouseButtonPressed(Uint8 button);
+		bool IsMouseButtonReleased(Uint8 button);
 
-	//TELLS IF THE USE ASKED THE GAME TABLE TO QUIT
-	bool quitRequested();
+	protected:
+		glm::vec2 oldMousePosition;
+		glm::vec2 currentMousePosition;
 
-	//RETURNS THE CURRENT MOUSE X POSITION
-	int getMouseX();
+		std::map<SDL_Keycode, bool> currentKeyboardMap;
+		std::map<SDL_Keycode, bool> oldKeyboardMap;
 
-	//RETURNS THE CURRENT MOUSE Y POSITION
-	int getMouseY();
-	
-	//LOCKS THE "INPUTMANAGER", PREVENTING IT TO ACTUALLY REFRESH INPUT AND MAKING ALL METHODS RETURN "FALSE"
-	void lock();
-	
-	//UNLOCKS THE "INPUTMANAGER", ALLOWING IT TO RESPOND NORMALLY TO INPUT
-	void unlock();
+		std::map<Uint8, bool> currentMouseMap;
+		std::map<Uint8, bool> oldMouseMap;
+	};
+}
 
-	//TELLS IF THE MOUSE IS CURRENTLY INSIDE THE RECTANGLE
-	//SPECIFIED BY #X, #Y, #W, #H
-	bool isMouseInside(int x, int y, int w, int h);
-
-	//TELLS IF THE "KEY" CAN BE PRINTED ONSCREEN (NOT A CONTROL KEY)
-	//IF A KEY IS VISIBLE ACCORDING TO THE ASCII TABLE
-	static bool isPrintable(SDL_Keycode key);
-	bool isPrintableKeyDown();
-	std::string getCurPrinableKey();
-	
-	//WUT
-	InputManager();
-
-	//REMOVING COPY-CONSTRUCTOR AND ASSGINEMT OPERATOR
-	InputManager(InputManager const&) {};
-	void operator=(InputManager const&) {};
-
-private:
-
-	//CURRENT SINGLE INSTANCE OF THE CLASS
-	static InputManager* instance;
-
-	//SAVE SDL INTERNAL MOUSE STATE
-	uint8_t mouse;
-
-	//CURRENT MOUSE X POSITION
-	int mouseX;
-
-	//CURRENT MOUSE Y POSITION
-	int mouseY;
-
-	//SAVE WHICH KEYS ARE CURRENTLY DOWN
-	bool keyDown[KEYBOARD_SIZE];
-
-	//SAVE WHICH KEYS ARE CURRENTLY UP
-	bool keyUp[KEYBOARD_SIZE];
-
-	//SAVE WHICH MOUSE BUTTONS ARE CURRENTLY DOWN
-	bool mouseDown[MOUSE_SIZE];
-
-	//SAVE WHICH MOUSE BUTTONS ARE CURRENTLY UP
-	bool mouseUp[MOUSE_SIZE];
-
-	//TELLS IF WE MUST QUIT THE GAME
-	bool will_quit;
-
-	//IF THE USER PRESSED THE A PRINTABLE KEY, THIS IS WHERE IT WILL BE STORED
-	int curPrintableKey;
-
-	//TELLS IF THE MANAGER IS CURRENTLY LOCKED
-	bool isLocked;
-
-};
 #endif 

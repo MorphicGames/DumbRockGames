@@ -7,6 +7,8 @@
 
 #include "OpenGL\glew-1.13.0\include\GL\glew.h"
 
+class Shader;
+
 namespace DRE
 {
 	class ShaderProgram
@@ -14,9 +16,8 @@ namespace DRE
 	private:
 		GLuint m_Program;
 
-		ShaderManager* m_pShaderManager;
 	public:
-		ShaderProgram(ShaderManager* shaderManager);
+		ShaderProgram();
 		~ShaderProgram();
 
 		GLuint GetProgram() const;
