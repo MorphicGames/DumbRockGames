@@ -113,6 +113,7 @@ namespace DRE
 
 	bool GameObject::HasComponent(Component* c)
 	{
+		return false;
 		/*
 				if (componentList.size() > 0)
 		{

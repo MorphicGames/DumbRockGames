@@ -1,4 +1,5 @@
 ﻿  Scene.cpp
+<<<<<<< HEAD
 c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\scene.cpp(11): error C2664: 'DRE::GameObject::GameObject(const DRE::GameObject &)': cannot convert argument 1 from 'DRE::Scene *const ' to 'Scene *'
   c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\scene.cpp(11): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
 c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\scene.cpp(16): error C2664: 'DRE::Camera::Camera(const DRE::Camera &)': cannot convert argument 1 from 'DRE::Scene *const ' to 'Scene *'
@@ -19,24 +20,18 @@ c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\scen
 c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\gameobject.cpp(32): warning C4018: '<': signed/unsigned mismatch
 c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\gameobject.cpp(162): warning C4018: '<': signed/unsigned mismatch
 c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\gameobject.cpp(177): warning C4018: '<': signed/unsigned mismatch
-  Camera.cpp
-c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\scene.h(30): error C2061: syntax error: identifier 'Camera'
-c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\scene.h(32): error C2061: syntax error: identifier 'GameObject'
-c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\scene.h(36): error C2143: syntax error: missing ';' before '*'
-c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\scene.h(36): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\scene.h(36): error C2238: unexpected token(s) preceding ';'
-c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\scene.h(48): error C2143: syntax error: missing ';' before '*'
-c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\scene.h(48): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\scene.h(48): error C2238: unexpected token(s) preceding ';'
-c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\scene.h(49): error C2143: syntax error: missing ';' before '*'
-c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\scene.h(49): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\scene.h(49): error C2238: unexpected token(s) preceding ';'
-c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\scene.h(54): error C2065: 'GameObject': undeclared identifier
-c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\scene.h(54): error C2923: 'std::unique_ptr': 'GameObject' is not a valid template type argument for parameter '_Ty'
-c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\scene.h(54): error C3203: 'default_delete': unspecialized class template can't be used as a template argument for template parameter '_Dx', expected a real type
-c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\scene.h(55): error C2065: 'GameObject': undeclared identifier
-c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\scene.h(55): error C2923: 'std::default_delete': 'GameObject' is not a valid template type argument for parameter '_Ty'
-c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\mesh.h(84): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
-c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\camera.cpp(34): warning C4244: '=': conversion from 'Sint32' to 'float', possible loss of data
-c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\camera.cpp(35): warning C4244: '=': conversion from 'Sint32' to 'float', possible loss of data
+=======
+c:\users\tjrap\source\repos\dumbrockgames\dumbrockengine\dumbrockengine\scene.cpp(11): error C2664: 'DRE::GameObject::GameObject(const DRE::GameObject &)': cannot convert argument 1 from 'DRE::Scene *' to 'Scene *'
+  c:\users\tjrap\source\repos\dumbrockgames\dumbrockengine\dumbrockengine\scene.cpp(11): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+c:\users\tjrap\source\repos\dumbrockgames\dumbrockengine\dumbrockengine\scene.cpp(16): error C2664: 'DRE::Camera::Camera(const DRE::Camera &)': cannot convert argument 1 from 'DRE::Scene *' to 'Scene *'
+  c:\users\tjrap\source\repos\dumbrockgames\dumbrockengine\dumbrockengine\scene.cpp(16): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
   Generating Code...
+  Compiling...
+>>>>>>> origin/master
+  Camera.cpp
+c:\users\tjrap\source\repos\dumbrockgames\dumbrockengine\dumbrockengine\mesh.h(84): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
+c:\users\tjrap\source\repos\dumbrockgames\dumbrockengine\dumbrockengine\camera.cpp(34): warning C4244: '=': conversion from 'Sint32' to 'float', possible loss of data
+c:\users\tjrap\source\repos\dumbrockgames\dumbrockengine\dumbrockengine\camera.cpp(35): warning C4244: '=': conversion from 'Sint32' to 'float', possible loss of data
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  GameObject.cpp
