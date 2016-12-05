@@ -15,17 +15,12 @@ namespace DRE
 		{
 			mtype = type;
 		}
-		virtual ~Component();
+		virtual ~Component() = 0;
 
 		virtual void Update() = 0;
 		virtual void Render() = 0;
 
-	protected:
 		std::string mtype;
-
-
-
-
 	};
 }
 

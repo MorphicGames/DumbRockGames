@@ -49,16 +49,16 @@ namespace DRE
 		up = glm::cross(right, direction);
 
 		if (INPUT_MANAGER.IsKeyDown(SDLK_w)) {
-			//gameObject->transform.position += direction * deltaTime * speed;
+			gameObject->transform.Translate(direction * deltaTime * speed);
 		}
 		else if (INPUT_MANAGER.IsKeyDown(SDLK_s)) {
-			//gameObject->transform.position -= direction * deltaTime * speed;
+			gameObject->transform.Translate(-direction * deltaTime * speed);
 		}
 		else if (INPUT_MANAGER.IsKeyDown(SDLK_a)) {
-			//gameObject->transform.position -= right * deltaTime * speed;
+			gameObject->transform.Translate(-right * deltaTime * speed);
 		}
 		else if (INPUT_MANAGER.IsKeyDown(SDLK_d)) {
-			//gameObject->transform.position += right * deltaTime * speed;
+			gameObject->transform.Translate(right * deltaTime * speed);
 		}
 	}
 

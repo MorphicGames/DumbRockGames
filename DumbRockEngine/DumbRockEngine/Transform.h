@@ -11,6 +11,7 @@ namespace DRE {
 		Transform();
 		~Transform();
 
+		void Reset();
 		void Translate(glm::vec3 translate);
 		void Rotate(float angleX, float angleY, float angleZ);
 

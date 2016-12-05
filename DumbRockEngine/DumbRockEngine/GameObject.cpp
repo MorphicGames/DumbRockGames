@@ -17,12 +17,11 @@ namespace DRE
 			SetName(name);
 		}
 
-		//transform.Reset();
+		transform.Reset();
 		SetEnabled(true);
-		//componentList.reserve(sizeof(COMPONENT_TYPE));
 
 		this->scene = scene;
-		//this->scene->AddSceneNode(this);
+		this->scene->AddSceneNode(this);
 	}
 
 	GameObject::~GameObject()
@@ -113,21 +112,18 @@ namespace DRE
 
 	bool GameObject::HasComponent(Component* c)
 	{
-		return false;
-		/*
-				if (componentList.size() > 0)
+		if (componentList.size() > 0)
 		{
 			for (int i = 0; i < componentList.size(); i++)
 			{
 				Component* temp = componentList[i];
-				if (temp->compType == c->compType)
+				if (temp->mtype == c->mtype)
 				{
 					return true;
 				}
 			}
 		}
 		return false;
-		*/
 	}
 
 	void GameObject::RemoveComponent(Component* component)
