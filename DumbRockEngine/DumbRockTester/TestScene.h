@@ -5,17 +5,18 @@
 
 #include "Scene.h"
 
-using namespace DRE;
-
-class TestScene : public DRE::Scene
+namespace DRE
 {
-public:
-	TestScene();
-	~TestScene();
+	class TestScene : public Scene
+	{
+	public:
+		TestScene();
+		~TestScene();
 
-	void InitializeScene();
-	void Update(const F32 timeStep);
-	void Render();
-};
+		void InitializeScene();
+		void Update(const F32 timeStep);
+		void Render();
+	};
+}
 
 #endif

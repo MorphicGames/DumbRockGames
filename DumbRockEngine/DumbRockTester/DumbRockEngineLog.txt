@@ -1,13 +1,1 @@
-INFO: Created Game Engine - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrocktester\testergame.cpp at line: 12
-INFO: Starting Game Engine - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrocktester\testergame.cpp at line: 47
 INFO: Initializing Window... - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\window.cpp at line: 22
-INFO: Initializing OpenGLRenderer... - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\openglrenderer.cpp at line: 52
-INFO: Creating Vertex Shader - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\shader.cpp at line: 41
-INFO: Shader Compilation Succeeded - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\shader.cpp at line: 68
-INFO: Creating Fragment Shader - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\shader.cpp at line: 45
-INFO: Shader Compilation Succeeded - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\shader.cpp at line: 68
-INFO: Created Shader Program - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\shaderprogram.cpp at line: 9
-INFO: Attaching Shader to Shader Program - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\shaderprogram.cpp at line: 32
-INFO: Attaching Shader to Shader Program - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\shaderprogram.cpp at line: 32
-INFO: Linking Shader Program - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\shaderprogram.cpp at line: 51
-ERROR: Unable to open file "Assets/TestModel". - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\model.cpp at line: 18

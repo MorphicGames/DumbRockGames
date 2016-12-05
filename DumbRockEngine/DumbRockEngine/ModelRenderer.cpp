@@ -19,6 +19,6 @@ namespace DRE
 
 	void ModelRenderer::Render()
 	{
-
+		//m_model->Render();		
 	}
 }

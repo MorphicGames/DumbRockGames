@@ -1,7 +1,5 @@
 #include "Scene.h"
 
-#include <vector>
-
 #include "GameObject.h"
 
 namespace DRE
@@ -10,9 +8,9 @@ namespace DRE
 	{
 		rootNode = nullptr;
 
-		rootNode = new GameObject(this, ROOT_NAME);
+		rootNode = new GameObject(this, "ROOT_NAME");
 
-		//rootNode->transform.position = ORIGIN;
+		rootNode->transform.Reset();
 
 		mainCamera = currentCamera = nullptr;
 		mainCamera = new Camera(this);

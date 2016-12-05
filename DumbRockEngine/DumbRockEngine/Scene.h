@@ -9,9 +9,6 @@
 #include "Camera.h"
 #include "DRE_typedef.h"
 
-#define ROOT_NAME "RootNode"
-
-
 namespace DRE
 {
 	class Game;

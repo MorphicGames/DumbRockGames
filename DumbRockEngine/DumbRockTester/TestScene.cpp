@@ -1,5 +1,7 @@
 #include "TestScene.h"
 
+using namespace DRE;
+
 TestScene::TestScene()
 	: DRE::Scene()
 {

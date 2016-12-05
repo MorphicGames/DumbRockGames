@@ -35,5 +35,6 @@ namespace DRE
 	glm::mat4 Transform::getFullTransform()
 	{
 		//return all 3 things added together into a matrix
+		return glm::mat4(0.0f);
 	}
 }

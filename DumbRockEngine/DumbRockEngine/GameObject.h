@@ -5,8 +5,6 @@
 
 #include <vector>
 
-//#include "Scene.h"
-
 #include "Component.h"
 #include "Transform.h"
 #include "DRE_typedef.h"
@@ -38,7 +36,8 @@ namespace DRE
 		bool HasComponent(Component* component);
 		void RemoveComponent(Component* component);
 
-		template<typename T> T* GetComponent();
+		template<typename T> 
+		T* GetComponent();
 
 		void AddTag(std::string tag);
 		bool HasTag(std::string tag);

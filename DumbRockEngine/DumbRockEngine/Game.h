@@ -3,6 +3,9 @@
 
 #pragma once
 
+#include "SDL\include\SDL.h"
+#undef main
+
 #include "DRE_defines.h"
 #include "DRE_typedef.h"
 
@@ -23,10 +26,10 @@
 
 #define GAME DRE::Game::Instance()
 
-class Scene;
-
 namespace DRE
 {
+	class Scene;
+
 	class Game
 	{
 	private:

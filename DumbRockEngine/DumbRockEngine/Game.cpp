@@ -1,5 +1,7 @@
 #include "Game.h"
 
+#include "Scene.h"
+
 namespace DRE
 {
 	Game& Game::Instance()

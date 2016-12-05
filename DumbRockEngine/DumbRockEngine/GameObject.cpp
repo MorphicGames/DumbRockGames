@@ -1,13 +1,19 @@
 #include "GameObject.h"
 
+#include "Scene.h"
+
 #include "LogManager.h"
 #include "DRE_defines.h"
 
 namespace DRE
 {
-	GameObject::GameObject(Scene* scene, std::string name)
+	GameObject::GameObject(Scene* _scene, std::string name)
 		: gameObject(this)
 	{
+		tags = std::vector<std::string>();
+		childObjects = std::vector<GameObject*>();
+		componentList = std::vector<Component*>();
+
 		if (name == "")
 		{
 			SetName("");
@@ -20,8 +26,8 @@ namespace DRE
 		transform.Reset();
 		SetEnabled(true);
 
-		this->scene = scene;
-		this->scene->AddSceneNode(this);
+		scene = _scene;
+		scene->AddSceneNode(this);
 	}
 
 	GameObject::~GameObject()
