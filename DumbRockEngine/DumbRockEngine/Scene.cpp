@@ -2,14 +2,15 @@
 
 #include <vector>
 
+#include "GameObject.h"
+
 namespace DRE
 {
 	Scene::Scene()
 	{
+		rootNode = nullptr;
 
-		rootNode.reset(nullptr);
-
-		rootNode.reset(new GameObject(this, ROOT_NAME));
+		rootNode = new GameObject(this, ROOT_NAME);
 
 		//rootNode->transform.position = ORIGIN;
 

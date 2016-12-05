@@ -55,7 +55,7 @@ namespace DRE
 		virtual ~Game();
 		
 		bool InitializeEngine();
-		bool InitializeGame();
+		virtual bool InitializeGame();
 
 		void PreRender();
 		void PostRender();

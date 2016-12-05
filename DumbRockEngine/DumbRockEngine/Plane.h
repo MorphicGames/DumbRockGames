@@ -3,7 +3,7 @@
 
 #pragma once
 
-#include <glm.hpp>
+#include "OpenGL\glm\glm\glm.hpp"
 
 #include "DRE_typedef.h"
 

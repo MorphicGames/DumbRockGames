@@ -4,10 +4,9 @@
 #pragma once
 
 #include <string>
-#include <memory>
 
+#include "Game.h"
 #include "Camera.h"
-#include "GameObject.h"
 #include "DRE_typedef.h"
 
 #define ROOT_NAME "RootNode"
@@ -16,6 +15,7 @@
 namespace DRE
 {
 	class Game;
+	class GameObject;
 
 	class Scene
 	{
@@ -52,8 +52,7 @@ namespace DRE
 	protected:
 		std::string sceneName;
 
-		std::unique_ptr<GameObject> rootNode;
-		friend std::default_delete<GameObject>;
+		GameObject* rootNode;
 	};
 }
 

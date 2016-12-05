@@ -55,6 +55,21 @@ namespace DRE
 		canLoadNewScene = true;
 	}
 
+	void Game::UpdateGame(const F32 deltaTime)
+	{
+
+	}
+
+	void Game::RenderGame()
+	{
+
+	}
+
+	bool Game::InitializeGame()
+	{
+		return false;
+	}
+
 	void Game::DestroyGame()
 	{
 		if (currentScene) {

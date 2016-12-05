@@ -3,7 +3,7 @@
 
 #pragma once
 
-#include <glew.h>
+#include "OpenGL\glew-1.13.0\include\GL\glew.h"
 
 #include "OpenGL\glm\glm\glm.hpp"
 #include "DRE_typedef.h"
