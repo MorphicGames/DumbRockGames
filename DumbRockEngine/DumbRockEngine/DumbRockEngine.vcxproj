@@ -160,6 +160,7 @@
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="ModelManager.h" />
+    <ClInclude Include="ModelRenderer.h" />
     <ClInclude Include="OpenGLRenderer.h" />
     <ClInclude Include="Plane.h" />
     <ClInclude Include="ResourceManager.h" />
@@ -184,6 +185,7 @@
     <ClCompile Include="MaterialManager.cpp" />
     <ClCompile Include="Model.cpp" />
     <ClCompile Include="ModelManager.cpp" />
+    <ClCompile Include="ModelRenderer.cpp" />
     <ClCompile Include="OpenGLRenderer.cpp" />
     <ClCompile Include="Plane.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
@@ -194,6 +196,7 @@
     <ClCompile Include="SpriteManager.cpp" />
     <ClCompile Include="TextureManager.cpp" />
     <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="Transform.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
