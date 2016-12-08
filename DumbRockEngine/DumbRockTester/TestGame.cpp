@@ -4,7 +4,8 @@
 
 TestGame::TestGame()
 {
-	
+	//FIX
+	instance = this;
 }
 
 TestGame::~TestGame()

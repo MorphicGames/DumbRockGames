@@ -3,7 +3,7 @@
 using namespace DRE;
 
 TestScene::TestScene()
-	: DRE::Scene()
+	//: DRE::Scene()
 {
 	SetSceneName("Title Screen");
 }
@@ -15,7 +15,7 @@ TestScene::~TestScene()
 
 void TestScene::InitializeScene()
 {
-
+	std::cout << "break";
 }
 
 void TestScene::Update(const F32 timeStep)
