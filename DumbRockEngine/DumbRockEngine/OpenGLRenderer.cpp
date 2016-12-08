@@ -10,14 +10,14 @@
 #include "SDL\include\SDL.h"
 
 #include <glew.h>
-#include <glut.h>
+//#include <glut.h>
 
 namespace DRE
 {
 	OpenGLRenderer::OpenGLRenderer()
 	{
 		glEnable(GL_DEPTH_TEST);
-		glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+		glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
 
 		glEnable(GL_CULL_FACE);
 		glEnable(GL_DEPTH_TEST);

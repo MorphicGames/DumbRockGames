@@ -4,10 +4,17 @@
 
 namespace DRE
 {
-	Game& Game::Instance()
+	//FIX
+	Game* Game::instance = nullptr;
+	Game* Game::Instance()
 	{
-		static Game *instance = new Game();
-		return *instance;
+		if (instance == nullptr)
+		{
+			instance = new Game();
+		}
+
+	//	static Game *instance = new Game(); //Inifinte loop
+		return instance;
 	}
 
 	Game::Game()
@@ -126,8 +133,10 @@ namespace DRE
 			EngineRender();
 
 			totalTime += deltaTime;
-
-			SDL_Delay(gameTimer->GetSleepTime(fps));
+			//FIX
+			fps = 60;
+			unsigned int sleep = gameTimer->GetSleepTime(fps);
+			SDL_Delay(sleep);
 		}
 	}
 

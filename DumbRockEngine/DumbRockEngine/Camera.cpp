@@ -10,9 +10,10 @@ namespace DRE
 		: GameObject(scene)
 	{
 		gameObject = this;
-
-		windowWidth = GAME.gameWindow->GetWindowWidth();
-		windowHeight = GAME.gameWindow->GetWindowHeight();
+		//FIX
+		Game* game = GAME;
+		windowWidth = GAME->gameWindow->GetWindowWidth();
+		windowHeight = GAME->gameWindow->GetWindowHeight();
 
 		horizontalAngle = 3.14f;
 		verticalAngle = 0.0f;

@@ -10,9 +10,9 @@ namespace DRE
 	GameObject::GameObject(Scene* _scene, std::string name)
 		: gameObject(this)
 	{
-		tags = std::vector<std::string>();
-		childObjects = std::vector<GameObject*>();
-		componentList = std::vector<Component*>();
+		//tags = std::vector<std::string>();
+		//childObjects = std::vector<GameObject*>();
+		//componentList = std::vector<Component*>();
 
 		if (name == "")
 		{

@@ -37,7 +37,7 @@ namespace DRE
 		void EngineRender();
 
 	public:
-		static Game& Instance();
+		static Game* Instance();
 
 		void RunGame();
 		void GameLoop();
@@ -68,7 +68,7 @@ namespace DRE
 		F32 fps;
 		F32 totalTime, lastUpdateTime, timeSinceLastUpdate;
 		F32 deltaTime;
-
+		static Game *instance;
 		bool isRunning;
 		bool canLoadNewScene;
 	};

@@ -65,6 +65,10 @@ namespace DRE
 	void Scene::AddSceneNode(GameObject* gameObject)
 	{
 		std::string test = gameObject->GetName();
+		//Fix
+		if (gameObject->GetName() == "ROOT_NAME") {
+			return;
+		}
 
 		if (test == "")
 		{
