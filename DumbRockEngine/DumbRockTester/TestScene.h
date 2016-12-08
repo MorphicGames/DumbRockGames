@@ -9,6 +9,11 @@ namespace DRE
 {
 	class TestScene : public Scene
 	{
+	protected:
+		Mesh* testMesh;
+
+		ShaderProgram program;
+
 	public:
 		TestScene();
 		~TestScene();

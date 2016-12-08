@@ -153,11 +153,11 @@ namespace DRE
 
 			currentScene = nextScene;
 
-			//currentScene->InitializeScene();
+			currentScene->InitializeScene();
 		}
 
 		if (currentScene) {
-			//currentScene->Update(timeStep);
+			currentScene->Update(timeStep);
 		}
 
 		UpdateGame(timeStep);

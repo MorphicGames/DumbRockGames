@@ -27,6 +27,8 @@ namespace DRE
 		glFrontFace(GL_CCW);
 		glEnable(GL_BLEND);
 		glBlendFuncSeparate(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA, GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
+
+		LogManager::LogMessage(LogMessageType::INFO, "OpenGLRenderer Initialized", __FILE__, __LINE__);
 	}
 
 	OpenGLRenderer::~OpenGLRenderer()
