@@ -1,1 +1,1 @@
-INFO: Initializing Window... - from: c:\users\andrew\documents\c++\nexgameengine\dumbrockgames-master\dumbrockengine\dumbrockengine\window.cpp at line: 22
+INFO: Initializing Window... - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\window.cpp at line: 22

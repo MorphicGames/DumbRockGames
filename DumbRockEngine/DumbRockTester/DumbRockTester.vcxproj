@@ -87,8 +87,8 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>$(SolutionDir)Debug;C:\Users\Andrew\Documents\C++\NexGameEngine\DumbRockGames-master\DumbRockEngine\DumbRockEngine\OpenGL\glew-1.13.0\lib\Release MX\win32;C:\Users\Andrew\Documents\C++\NexGameEngine\DumbRockGames-master\DumbRockEngine\DumbRockEngine\SDL\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>glew32.lib;DumbRockEngine.lib;SDL2.lib;SDL2main.lib;opengl32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Debug;$(SolutionDir)DumbRockEngine\OpenGL\glew-1.13.0\lib\Release\win32;$(SolutionDir)DumbRockEngine\DumbRockEngine\SDL\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;glew32s.lib;DumbRockEngine.lib;SDL2.lib;SDL2main.lib;opengl32.lib</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
       <AdditionalOptions>/NODEFAULTLIB:msvcrt.lib %(AdditionalOptions)</AdditionalOptions>
     </Link>
