@@ -110,11 +110,13 @@ void TestScene::InitializeScene()
 
 	testMesh = new Mesh(vertices, indices, textures);
 
-	Shader vertex = Shader("TestVertexShader", ShaderType::VERTEX);
-	Shader fragment = Shader("TestFragmentShader", ShaderType::FRAGMENT);
+	Shader vertex = Shader("TestVertexShader.vert", ShaderType::VERTEX);
+	Shader fragment = Shader("TestFragmentShader.frag", ShaderType::FRAGMENT);
 
 	program.AttachShader(vertex);
 	program.AttachShader(fragment);
+
+	program.LinkProgram();
 
 	program.UseProgram();
 }

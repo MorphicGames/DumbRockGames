@@ -22,10 +22,10 @@ bool TestGame::InitializeGame()
 
 void TestGame::UpdateGame(const F32 deltaTime)
 {
-
+	LogManager::ConsoleMessage("Updating Game");
 }
 
 void TestGame::RenderGame()
 {
-
+	LogManager::ConsoleMessage("Rendering Game");
 }

@@ -13,7 +13,7 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\A Not Suspicious Folder">
+    <Filter Include="Header Files\Resources">
       <UniqueIdentifier>{ae06be09-52ba-4d36-9d0f-bd79963b6d2c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -40,7 +40,7 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="GameTest.h">
-      <Filter>Header Files\A Not Suspicious Folder</Filter>
+      <Filter>Header Files\Resources</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

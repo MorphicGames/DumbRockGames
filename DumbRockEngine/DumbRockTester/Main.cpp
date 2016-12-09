@@ -34,26 +34,26 @@ int main(int argc, char* argv[])
 {
 	LogManager::Initialize();
 
-	gt = GameTest();
+	//gt = GameTest();
 
-	gt.Initialize(argc, argv);
+	//gt.Initialize(argc, argv);
 
-	//TestGame* testGame = new TestGame();
-	//testGame->RunGame();
+	TestGame* testGame = new TestGame();
+	testGame->RunGame();
 
-	//delete testGame;
-	//testGame = nullptr;
+	delete testGame;
+	testGame = nullptr;
 
-	glewInit();
+	//glewInit();
 
-	glutKeyboardFunc(keyboard);
-	glutMouseFunc(mouse);
-	glutIdleFunc(idle);
+	//glutKeyboardFunc(keyboard);
+	//glutMouseFunc(mouse);
+	//glutIdleFunc(idle);
+	
+	//glutReshapeFunc(reshape);
+	//glutDisplayFunc(display);
 
-	glutReshapeFunc(reshape);
-	glutDisplayFunc(display);
-
-	glutMainLoop();
+	//glutMainLoop();
 
 	return 0;
 }

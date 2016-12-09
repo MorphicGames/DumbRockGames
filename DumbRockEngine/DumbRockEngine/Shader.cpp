@@ -31,7 +31,7 @@ namespace DRE
 
 		const GLchar* shaderCode = fileCode.c_str();
 
-		//LogManager::ConsoleMessage(fileCode);
+		LogManager::ConsoleMessage(fileCode);
 
 		GLint success;
 
