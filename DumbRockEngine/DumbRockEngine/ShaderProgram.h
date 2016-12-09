@@ -30,6 +30,8 @@ namespace DRE
 		void LinkProgram();
 
 		void UseProgram();
+
+		GLuint viewLocation, projectionLocation;
 	};
 }
 

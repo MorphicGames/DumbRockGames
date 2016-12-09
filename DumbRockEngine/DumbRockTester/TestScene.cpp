@@ -115,6 +115,8 @@ void TestScene::InitializeScene()
 
 	program.AttachShader(vertex);
 	program.AttachShader(fragment);
+
+	program.UseProgram();
 }
 
 void TestScene::Update(const F32 timeStep)
@@ -124,6 +126,9 @@ void TestScene::Update(const F32 timeStep)
 
 void TestScene::Render()
 {
-	program.UseProgram();
-	testMesh->Render(program);
+	//LogManager::LogMessage(LogMessageType::INFO, "Rendering", __FILE__, __LINE__);
+	//testMesh->SimpleRender();
+	//testMesh->Render(program);
+
+
 }

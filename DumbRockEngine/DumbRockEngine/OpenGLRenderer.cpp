@@ -17,11 +17,11 @@ namespace DRE
 	OpenGLRenderer::OpenGLRenderer()
 	{
 		glEnable(GL_DEPTH_TEST);
-		glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
+		glClearColor(0.0f, 1.0f, 1.0f, 0.0f);
 
 		glEnable(GL_CULL_FACE);
 		glEnable(GL_DEPTH_TEST);
-		glCullFace(GL_FRONT);
+		glCullFace(GL_BACK);
 		glDepthFunc(GL_LESS);
 		glDepthMask(GL_TRUE);
 		glFrontFace(GL_CCW);

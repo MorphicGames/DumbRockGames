@@ -31,6 +31,8 @@ namespace DRE
 
 			glBindVertexArray(this->VAO);
 			glBindBuffer(GL_ARRAY_BUFFER, this->VBO);
+			glEnableVertexAttribArray(0);
+			glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (GLvoid*)0);
 
 			glBufferData(GL_ARRAY_BUFFER, this->vertices.size() & sizeof(Vertex), &this->vertices[0], GL_STATIC_DRAW);
 
@@ -38,8 +40,6 @@ namespace DRE
 			glBufferData(GL_ELEMENT_ARRAY_BUFFER, this->indices.size() * sizeof(GLuint), &this->indices[0], GL_STATIC_DRAW);
 
 			glEnableVertexAttribArray(0);
-			glEnableVertexAttribArray(0);
-			glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex),(GLvoid*)0);
 			glEnableVertexAttribArray(1);
 			glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex),(GLvoid*)offsetof(Vertex, normal));
 			glEnableVertexAttribArray(2);
@@ -89,6 +89,11 @@ namespace DRE
 			glBindVertexArray(this->VAO);
 			glDrawElements(GL_TRIANGLES, this->indices.size(), GL_UNSIGNED_INT, 0);
 			glBindVertexArray(0);
+		}
+
+		void SimpleRender()
+		{
+			glDrawArrays(GL_TRIANGLES, 0, this->VAO);
 		}
 	};
 }

@@ -1,4 +1,5 @@
 #version 430 core
+
 in vec3 outColour;
 
 out vec4 colour;

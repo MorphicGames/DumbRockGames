@@ -1,9 +1,0 @@
-INFO: Initializing Window... - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\window.cpp at line: 22
-INFO: OpenGLRenderer Initialized - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\openglrenderer.cpp at line: 31
-INFO: Created Shader Program - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\shaderprogram.cpp at line: 9
-INFO: Creating Vertex Shader - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\shader.cpp at line: 41
-INFO: Shader Compilation Succeeded - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\shader.cpp at line: 68
-INFO: Creating Fragment Shader - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\shader.cpp at line: 45
-INFO: Shader Compilation Succeeded - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\shader.cpp at line: 68
-INFO: Attaching Shader to Shader Program - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\shaderprogram.cpp at line: 25
-INFO: Attaching Shader to Shader Program - from: c:\users\morph\documents\github\dumbrockgames\dumbrockengine\dumbrockengine\shaderprogram.cpp at line: 25

@@ -61,7 +61,6 @@ namespace DRE
 
 		SDL_DestroyWindow(m_pSDLWindow);
 
-		P_DELETE(m_WindowTitle);
 		P_DELETE(m_pWindowRect);
 	}
 

@@ -13,6 +13,7 @@
 namespace DRE
 {
 	class Scene;
+	class ShaderProgram;
 
 	class Camera : public GameObject
 	{
@@ -48,11 +49,17 @@ namespace DRE
 
 	protected:
 		glm::vec3 position;
+		glm::vec3 target;
 		glm::vec3 direction;
+
+		glm::vec3 cameraUp;
 		glm::vec3 up;
+		glm::vec3 cameraRight;
 
 		glm::mat4 projectionMatrix;
 		glm::mat4 viewMatrix;
+
+		ShaderProgram* shaderProgram;
 	};
 }
 

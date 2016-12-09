@@ -50,6 +50,9 @@ namespace DRE
 
 		renderer = new OpenGLRenderer();
 
+		fps = 60.0f;
+
+		LogManager::LogMessage(LogMessageType::INFO, "Game Engine Initialized", __FILE__, __LINE__);
 		return true;
 	}
 
@@ -105,6 +108,7 @@ namespace DRE
 			InitializeGame();
 			GameLoop();
 		}
+		DestroyGame();
 	}
 
 	void Game::GameLoop()
@@ -123,6 +127,7 @@ namespace DRE
 				if (SDLevent.type == SDL_QUIT || INPUT_MANAGER.IsKeyDown(SDLK_ESCAPE))
 				{
 					LogManager::LogMessage(LogMessageType::INFO, "Exit Game", __FILE__, __LINE__);
+					isRunning = false;
 				}
 			}
 			SDL_PumpEvents();
@@ -133,8 +138,6 @@ namespace DRE
 			EngineRender();
 
 			totalTime += deltaTime;
-			//FIX
-			fps = 60;
 			unsigned int sleep = gameTimer->GetSleepTime(fps);
 			SDL_Delay(sleep);
 		}
@@ -175,7 +178,7 @@ namespace DRE
 		{
 			if (currentScene)
 			{
-				//currentScene->Render();
+				currentScene->Render();
 			}
 			RenderGame();
 		}

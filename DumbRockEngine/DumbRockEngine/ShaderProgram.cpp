@@ -68,10 +68,14 @@ namespace DRE
 				free(infoLog);
 			}
 		}
+
+		viewLocation = glGetUniformLocation(this->m_Program, "view");
+		projectionLocation = glGetUniformLocation(this->m_Program, "projection");
 	}
 
 	void ShaderProgram::UseProgram()
 	{
+		LogManager::LogMessage(LogMessageType::INFO, "Using Shader Program", __FILE__, __LINE__);
 		glUseProgram(this->m_Program);
 	}
 }
